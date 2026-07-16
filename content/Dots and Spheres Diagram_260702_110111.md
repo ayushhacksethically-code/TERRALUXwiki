@@ -8,9 +8,9 @@
 - A sphere is a 3-dimensional diagram.
 - When dot and sphere are used together in one diagram, the sphere represents urban population because a very large population is concentrated in a very small areal unit (e.g., a town or city) that is often represented by a singular marker on a map.
 - The rural population is represented as being distributed over a larger spatial unit compared to a town or city.
-- A sphere diagram shows urban population via a 3-dimensional image sphere (possessing three dimensions: length, width, and radius) that consists of a series of spheres proportional in size to the amount they represent.
+- A sphere diagram shows urban population via a 3-dimensional representation of a sphere (possessing three physical spatial dimensions: length, width, and height/depth) that consists of a series of spheres proportional in size to the amount they represent.
 - The sphere form accommodates more statistical quantity within a short area on a map, making it more acceptable than multiple 1-dimensional and 2-dimensional diagrams for a large statistical quantity of a small area.
-- A dots diagram shows rural population via a 1-dimensional distribution map where the simplest symbolic dots of equal size represent the distribution of quantities or values by inserting them unequally, randomly, and scattered in specific administrative units.
+- A dots diagram shows rural population via a 2-dimensional distribution map where the simplest symbolic dots of equal size represent the distribution of quantities or values by inserting them unequally, randomly, and scattered in specific administrative units.
 - This symbolic map is designed to indicate the distribution of a particular object, such as a pole, port, village, city, temple, mosque, population, or agricultural land.
 
 ### Construction of Dots and Sphere Diagrams
@@ -20,11 +20,11 @@
 - **Assign Dots to Regions:** Calculate the number of dots required to represent rural and urban populations separately for each region, distributing them based on population proportions.
 - **Dots Visualization:** Place the dots on the map so they are evenly distributed within the region while maintaining the correct rural-urban population ratio.
 - **Dots Styling:** Different colors can be used for rural and urban dots to visually distinguish between the two categories.
-- **Sphere Map Data Preparation:** Obtain population density data for the area of interest, calculated as the number of people per unit area (e.g., people per square kilometer).
-- **Sphere Construction:** Imagine a virtual sphere with a surface used to represent the population data, where the density of dots on the sphere is proportional to the population density in different areas.
-- **Sphere Dot Placement:** Place dots on the surface of the sphere based on the population density of corresponding geographical locations; higher densities have more dots clustered, lower densities have fewer.
-- **Sphere Projection:** Project the populated sphere onto a 2D map using different projection methods, each having its own properties and characteristics.
-- **Sphere Styling:** Use different colors or shades to distinguish rural and urban population densities on the map, and adjust dot sizes based on population magnitude.
+- **Sphere Map Data Preparation:** Gather rural and urban population data for the target regions or administrative units.
+- **Define Dot Value:** Choose a suitable population value represented by a single dot (e.g., 1 dot = 500 or 1,000 people) and calculate dot counts for each rural area.
+- **Rural Dot Plotting:** Distribute rural dots evenly within boundaries of rural units, avoiding unpopulated zones like water bodies or steep mountains.
+- **Sphere Scale Selection:** Since the volume of a sphere is proportional to the cube of its radius ($V \propto r^3$), the radius $r$ of the sphere is chosen proportional to the cube root of the urban population ($r \propto \sqrt[3]{P}$). Select a scaling factor to determine sphere radii.
+- **Urban Sphere Drawing:** For each urban center, compute the sphere radius using the cube-root scale, draw a circle at its location, and apply stippling or circular hatching to give a 3-dimensional spherical appearance.
 
 ### Merits and Demerits
 
@@ -39,12 +39,12 @@
   - Lacks precision when representing continuous data because it presents data in a discrete form, leading to a loss of information in highly variable datasets.
   - In densely populated regions, dots can overlap (overplotting), making it difficult to discern individual points and potentially obscuring patterns.
 
-#### Sphere Maps
+#### Sphere Symbols on Thematic Maps
 - **Advantages:**
-  - Reduces distortions commonly found in 2D map projections, particularly near the poles, providing a more accurate global representation.
-  - Provides a seamless and continuous representation of global datasets, allowing integration of diverse geographical information ideal for worldwide patterns.
-  - Useful in analyzing climate and weather patterns on a global scale, facilitating the study of climatic phenomena and atmospheric data.
+  - Can represent extremely large and concentrated urban populations without cluttering or overlapping, which would happen if dots were used.
+  - Visually striking and gives an immediate sense of the volume and relative size of different cities.
+  - The cube-root scale compresses a huge range of values, allowing both small towns and large metropolises to be shown on the same map.
 - **Disadvantages:**
-  - Can be challenging to interpret and visualize on a flat surface because it requires a 3D-to-2D projection, causing user difficulties.
-  - Sacrifices local details, making them less suitable for regional or local analyses.
-  - Introduces other types of distortions in different regions, impacting the accuracy of representing certain areas.
+  - It is difficult for the human eye to accurately compare the volumes of different 3D spheres (we tend to underestimate differences in volume).
+  - Calculating the cube root and drawing shaded spheres requires complex calculations and drawing skills.
+  - Large spheres can overlap and obscure other features or dots on the map around the city center.

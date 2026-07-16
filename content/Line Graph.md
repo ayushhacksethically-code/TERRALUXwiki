@@ -5,7 +5,7 @@
 - A line graph is a unique graph commonly used in statistics that represents the change in a quantity with respect to another quantity.
 - Variation in a line graph is usually plotted in a two-dimensional XY plane.
 - If the relation including any two measures can be expressed utilizing a straight line in a graph, then such graphs are called linear graphs.
-- The line graph is also called a linear graph.
+- While a linear graph must be a straight line, a line graph can consist of straight segments or curves representing non-linear variations over time or other intervals.
 - A line graph, line chart, or line plot is a graph that utilizes points and lines to represent change over time.
 - It is a chart that shows a line joining several points or a line that shows the relation between points.
 - The graph represents quantitative data between two changing variables with a line or curve that joins a series of successive data points.

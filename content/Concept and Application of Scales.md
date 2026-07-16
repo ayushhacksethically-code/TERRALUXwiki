@@ -26,15 +26,15 @@
 - Limitation: People who are familiar with only one measurement system may not understand a statement of scale given in another system.
 - Limitation: If the map is photographically reduced or enlarged, the written statement of scale becomes redundant, and a new scale must be worked out.
 
-##### Advantages of Linear Scale / Statement of Scale
-- This scale is very easy to understand as the calculations are not complex.
-- In case of enlargement or reduction of the map, the linear scale gets reduced or enlarged proportionately, keeping map distance and ground distance relationships true.
-- The area of a map can be easily determined with the help of this scale.
-- A short distance on a map can be measured accurately through this scale.
+##### Advantages of Statement of Scale
+- It is the simplest and easiest method to understand for the general public.
+- It requires no mathematical calculations or measurements to interpret.
+- It is quick and straightforward to express in writing.
 
-##### Disadvantages of Linear Scale / Statement of Scale
-- Calculations required for drawing this scale are very complex.
-- Designing the scale along with headings to make it presentable is a laborious and time-consuming process.
+##### Disadvantages of Statement of Scale
+- It is only understood by individuals who are familiar with the specific unit of measurement used (unit/language barrier).
+- If the map is photographically enlarged or reduced, the statement of scale becomes incorrect and invalid.
+- It is less precise than other methods and cannot be used for direct universal conversions.
 
 #### 2) Graphical or Bar Scale
 - This scale type shows map distances and corresponding ground distances using a line bar marked with primary and secondary divisions.

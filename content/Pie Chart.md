@@ -2,7 +2,7 @@
 
 ### Definitions
 
-- A pie chart, also known alternately as a circle graph, histogram, pie diagram, or scatter diagram, is a type of graph that uses a circular structure to view data.
+- A pie chart, also known alternately as a circle graph or pie diagram, is a type of graph that uses a circular structure to view data.
 - The pieces of the graph are equal to the percentage of the total in each group, making the size of each slice proportional to the size of the group as a whole.
 - The entire pie represents 100% of the total, while the individual slices represent parts of that whole.
 

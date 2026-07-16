@@ -34,7 +34,7 @@
 - Example: The path of a projectile is best described in terms of points in a three-dimensional space, even though the path itself is actually a two-dimensional curve in a plane.
 
 #### 2) Polar Coordinate System
-- The polar coordinate system is a coordinate system that uses two angular coordinates to uniquely identify a point in two-dimensional space.
+- The polar coordinate system is a coordinate system that uses a radial distance and an angular coordinate to uniquely identify a point in two-dimensional space.
 - The radial coordinate is the distance from the origin to the target point.
 - The angular coordinate is the angle, measured in radians, between the positive x-axis and the line segment connecting the origin to the point.
 - A polar coordinate is specified by its radial coordinate $r$ and its angular coordinate $\theta$.
@@ -54,4 +54,4 @@
 - Polar coordinates can be further developed into a cylindrical coordinate system to represent solid geometries.
 - Both systems can represent imaginary numbers by defining an imaginary axis, playing a vital role in complex algebra.
 - In plain form, Cartesian coordinates are real numbers $(x, y, z)$.
-- Coordinates in the polar system are not always real numbers: if the angle is given in degrees, the coordinates are not real numbers; if the angle is given in radians, the coordinates are real numbers.
+- Coordinates in the polar system are always real numbers, regardless of whether the angle is measured in radians or degrees, as both coordinates represent real values.

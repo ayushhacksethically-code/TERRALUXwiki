@@ -23,9 +23,9 @@
 - There are gaps between the bars and bars that never meet each other.
 - It is used for the comparison of discrete variables.
 - The bar chart is often of similar width.
-- It always represents quantitative data only.
-- The width of the chart may vary in the bar chart.
-- There will be no spaces between two bars in the bar chart.
+- It can represent both qualitative (categorical) and discrete quantitative data.
+- The width of all bars in a bar chart is uniform.
+- There are distinct gaps (spaces) between adjacent bars in a bar chart.
 
 #### Histograms
 - The histogram refers to a graphical representation where information is shown in the form of bar charts for the comparison of different frequencies of numerical data.
@@ -34,9 +34,9 @@
 - The components of the histogram are numbers to be listed as a data range.
 - It is used to display the incident frequency.
 - The data points in a histogram are clustered and made according to their bin value.
-- Histograms always represent categorical data only.
-- The width of the histogram would be equal.
-- There will be equally spaced bars in the histogram.
+- Histograms represent continuous quantitative (numerical) data.
+- The width of the bars in a histogram represents the class interval (which is typically equal but can be unequal).
+- There are no spaces between adjacent bars in a histogram, as they represent contiguous class intervals.
 
 ### Merits and Significance
 

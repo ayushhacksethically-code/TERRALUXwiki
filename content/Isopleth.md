@@ -2,7 +2,7 @@
 
 ### General Definition and System
 
-- The term isopleth has been derived from the words "isos" meaning 'same' and "plethron" meaning 'measure'.
+- The term isopleth has been derived from the words "isos" meaning 'same' and "plethos" meaning 'quantity' or 'multitude'.
 - Isopleths are lines joining places of equal values, which may be in the form of quantity, intensity, or density.
 - Specific types of isopleths:
   - **Isobar:** A line representing points of equal atmospheric pressure.

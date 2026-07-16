@@ -15,7 +15,7 @@
 - To solve the problem of the deformation of the projection of UTM coordinate maps, a spindle is introduced to divide the earth's surface.
 - The entire surface has been divided into 60 spindles or zones of 6 degrees in longitude, resulting in 60 equal projections with their respective central meridian.
 - Each spindle is divided as if it were a segment of an orange.
-- To establish a better division, the spindles are numbered from 1 to 60 starting from the Greenwich meridian due east.
+- To establish a better division, the spindles are numbered from 1 to 60 starting from the 180° meridian (International Date Line) due east.
 - Each spindle is divided into different areas that are named by a capital letter following the direction from south to north, beginning with the letter C and ending with the letter X.
 - In order not to be confused, there are no vowels and no letters that can be confused with a number used for the zone letters.
 - Each zone of UTM coordinates is expressed by a zone number and a zone letter.
@@ -35,7 +35,7 @@
 - This value decreases as we go west and increases when we go east to ensure positive values on this axis.
 - The vertical axis has its origin in the Equator.
 - In the northern hemisphere of the Equator, the vertical axis has the value 0 at the Equator, which increases towards the north until it reaches the value 10000000 at the North Pole.
-- In the southern hemisphere, the Equator will have the value 10000000, which grows towards the south to ensure positive vertical axis values.
+- In the southern hemisphere, the Equator is assigned a false northing value of 10000000 m, which decreases towards the south to ensure positive vertical axis values.
 
 ### Properties of the UTM
 

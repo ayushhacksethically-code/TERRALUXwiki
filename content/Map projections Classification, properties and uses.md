@@ -81,14 +81,14 @@
 - **Limitations:** Distortion increases rapidly towards the poles; it is non-orthomorphic, maintaining equality of area at the expense of severe shape distortion.
 
 #### Mercator's Projection
-- Developed by Dutch cartographer Mercator Gerardus Karmer in 1569. Based entirely on mathematical formulae, making it an orthomorphic projection where true shape is maintained. Parallels and meridians intersect at right angles, and the distance between parallels increases towards the poles. A straight line joining any two points gives a constant bearing, known as a _Laxodrome_ or _Rhumb line_.
+- Developed by Flemish cartographer Gerardus Mercator (Gerhard Kremer) in 1569. Based entirely on mathematical formulae, making it an orthomorphic projection where true shape is maintained. Parallels and meridians intersect at right angles, and the distance between parallels increases towards the poles. A straight line joining any two points gives a constant bearing, known as a _Loxodrome_ or _Rhumb line_.
 - **Properties:**
   - Parallels and meridians are straight lines intersecting at right angles.
   - All parallels have the same length, which equals the length of the equator.
   - All meridians have the same length and equal spacing, but are longer than corresponding meridians on the globe.
   - Spacing between parallels increases towards the poles.
   - Shape of small areas is preserved near the equator, but distortion takes place at higher latitudes.
-  - It is an azimuthal and orthomorphic projection, as the scale along the meridian equals the scale along the parallel.
+  - It is a cylindrical and orthomorphic (conformal) projection, as the scale along the meridian equals the scale along the parallel at any point.
 - **Uses:** Highly suitable for world maps and atlas maps; critical for navigation showing sea and air routes; ideal for portraying drainage patterns, ocean currents, winds, temperatures, and worldwide rainfall distributions.
 - **Limitations:** Extreme scale exaggeration in high latitudes makes polar countries appear far too large (e.g., Greenland appears equal in size to the USA, whereas it is actually $1/10\text{th}$ the size of the USA). The poles cannot be shown because the $90^\circ$ parallel and meridian are infinite.
 
