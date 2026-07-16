@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="container container-reading">
+  <div class="reading-layout">
+    <!-- Main Article -->
+    <article class="article-card">
+      <div class="article-header">
+        <a href="{{ "/" | relURL }}" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        <h1 class="article-title">{{ .Title }}</h1>
+        <div class="article-meta">
+          <span><i class="fa-solid fa-book-open"></i> {{ .WordCount }} words</span>
+          <span><i class="fa-solid fa-clock"></i> {{ .ReadingTime }} min read</span>
+        </div>
+      </div>
+      <div class="article-content">
+        {{ .Content }}
+      </div>
+    </article>
+
+    <!-- Sidebar with other notes -->
+    <aside class="sidebar-card">
+      <h3 class="sidebar-title"><i class="fa-solid fa-list-ul"></i> All Topics</h3>
+      <ul class="sidebar-list">
+        {{ range .Site.RegularPages }}
+        <li class="sidebar-item{{ if eq .Permalink $.Permalink }} active{{ end }}">
+          <a href="{{ .RelPermalink }}" class="sidebar-link">
+            <span class="sidebar-item-title">{{ .Title }}</span>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </aside>
+  </div>
+</div>
+{{ end }}

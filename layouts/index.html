@@ -1,0 +1,103 @@
+{{ define "main" }}
+<div class="hero-section">
+  <div class="container text-center">
+    <h1 class="hero-title">TERRALUX</h1>
+    <p class="hero-subtitle">Interactive Study Portal for Cartographic Techniques & Thematic Mapping</p>
+    
+    <!-- Search Bar -->
+    <div class="search-container">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" id="search-input" placeholder="Search topics (e.g. Isopleth, Scales, UTM)..." autocomplete="off">
+    </div>
+  </div>
+</div>
+
+<div class="container content-section">
+  <div class="section-header">
+    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Syllabus Topics ({{ len .Site.RegularPages }})</h2>
+    <div class="view-toggles">
+      <span class="badge"><i class="fa-solid fa-circle text-success"></i> All Content Loaded</span>
+    </div>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="cards-grid" id="cards-grid">
+    {{ range .Site.RegularPages }}
+    <a href="{{ .RelPermalink }}" class="topic-card" data-title="{{ .Title | lower }}" data-content="{{ .Content | plainify | lower }}">
+      <div class="card-glow"></div>
+      <div class="card-content-wrapper">
+        <div class="card-icon">
+          {{ if in .Title "Map" }}
+          <i class="fa-solid fa-map-location-dot text-cyan"></i>
+          {{ else if in .Title "Chart" }}
+          <i class="fa-solid fa-chart-bar text-violet"></i>
+          {{ else if in .Title "Graph" }}
+          <i class="fa-solid fa-chart-line text-rose"></i>
+          {{ else if in .Title "Scale" }}
+          <i class="fa-solid fa-ruler-combined text-cyan"></i>
+          {{ else if in .Title "Log" }}
+          <i class="fa-solid fa-calculator text-violet"></i>
+          {{ else if in .Title "System" }}
+          <i class="fa-solid fa-network-wired text-rose"></i>
+          {{ else }}
+          <i class="fa-solid fa-file-lines text-cyan"></i>
+          {{ end }}
+        </div>
+        <h3 class="card-title">{{ .Title }}</h3>
+        <p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
+        <div class="card-meta">
+          <span><i class="fa-solid fa-book-open"></i> {{ .WordCount }} words</span>
+          <span><i class="fa-solid fa-clock"></i> {{ .ReadingTime }} min read</span>
+        </div>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+  
+  <div class="no-results" id="no-results" style="display: none;">
+    <i class="fa-solid fa-face-frown no-results-icon"></i>
+    <h3>No matching topics found</h3>
+    <p>Try searching for different keywords</p>
+  </div>
+</div>
+
+<!-- Client-side Search Javascript -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+    const cards = document.querySelectorAll('.topic-card');
+    const noResults = document.getElementById('no-results');
+
+    searchInput.addEventListener('input', function() {
+      const query = this.value.toLowerCase().trim();
+      let matchCount = 0;
+
+      cards.forEach(card => {
+        const title = card.getAttribute('data-title');
+        const content = card.getAttribute('data-content');
+
+        if (title.includes(query) || content.includes(query)) {
+          card.style.display = 'flex';
+          matchCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (matchCount === 0) {
+        noResults.style.display = 'block';
+      } else {
+        noResults.style.display = 'none';
+      }
+    });
+
+    // Clear search on Escape key
+    searchInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        this.value = '';
+        this.dispatchEvent(new Event('input'));
+      }
+    });
+  });
+</script>
+{{ end }}

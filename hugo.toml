@@ -1,0 +1,9 @@
+baseURL = '/'
+locale = 'en-us'
+title = 'TERRALUX'
+disableKinds = ['taxonomy', 'term']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
