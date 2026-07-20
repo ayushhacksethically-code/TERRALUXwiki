@@ -6,8 +6,8 @@
     <div class="flowchart-header">Frontogenesis vs. Frontolysis Comparison Map</div>
     <div class="mermaid">
     flowchart TD
-        A[Frontal Processes] --> B[Frontogenesis]
-        A --> C[Frontolysis]
+        A["Frontal Processes"] --> B["Frontogenesis"]
+        A --> C["Frontolysis"]
 
         B --> B1["- Definition: Formation or strengthening of a front<br>- Mechanism: Convergence of air masses with different properties<br>- Result: Intensified temp gradients & distinct boundaries<br>- Conditions: Forced convergence, causing lifting & thermal change"]
         

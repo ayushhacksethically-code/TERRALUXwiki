@@ -1,5 +1,102 @@
 ## Technical Text: Air Mass Deep Dive
 
+<details class="concept-map-toggle">
+  <summary class="btn-toggle-map"><i class="fa-regular fa-map"></i> View Concept Map & Visual Flowcharts</summary>
+  <div class="concept-map-container" style="background: #ffffff; padding: 15px;">
+    
+    <!-- Flowchart 1: INTRODUCTION & DEFINITION -->
+    <div class="flowchart-header">1. Introduction & Definition of Air Masses</div>
+    <div class="mermaid">
+    flowchart TD
+        Title["INTRODUCTION & DEFINITION OF AIR MASSES"]
+        Title --> Def["Definition of an Air Mass"]
+        Def --> Bullets["• Extremely large body of air in the atmosphere.<br>• Relatively huge bulk of air distinctive by its homogeneity of temperature & moisture content.<br>• Properties—temperature, humidity, and lapse rate (decrease of temp with height)—are largely uniform over an area.<br>• Uniform area can be several hundred kilometers across the surface of the earth."]
+        style Title fill:#f1f5f9,stroke:#334155,stroke-width:2px
+        style Def fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+    </div>
+    
+    <div class="map-connector"></div>
+    
+    <!-- Flowchart 2: FEATURES OF AIR MASSES -->
+    <div class="flowchart-header">2. Features & Determining Factors of Air Masses</div>
+    <div class="mermaid">
+    flowchart TD
+        Title["FEATURES & FACTORS DETERMINING AIR MASSES"]
+        Title --> Factors["Determining Factors (Character of Air Mass)"]
+        Factors --> Factors_Bullets["Determined by:<br>• Latitude & altitude<br>• Types of ocean currents<br>• Sunshine hours & sunshine angle<br>• Natural vegetation & temperature of the soil<br>• Snow cover & prevailing wind"]
+        
+        Title --> Density["Density & Stability Differences"]
+        Density --> Density_Bullets["• Dry air is denser than moist air.<br>• Cold and dry air masses are stable (higher density & higher average molecular bulk).<br>• Warm moist air masses are drifting (low density) and expand (lower molecular weight).<br>• Low pressure forces air mass movement (light, less moisture, generally sourced from inland)."]
+
+        Title --> Regional["Regional & Latitudinal Characteristics"]
+        Regional --> Regional_Bullets["• Mid-latitude zones: Can experience several different air mass types over a year.<br>• Tropical & Polar areas: More uniform weather throughout the year.<br>• Tropics: Wet rainy season, dry season, mild winters.<br>• Poles: Temperature depends almost completely on the angle of the sun (varies by season).<br>• Transition zones: Surface low pressure and fronts are most often found here."]
+
+        style Title fill:#f1f5f9,stroke:#334155,stroke-width:2px
+        style Factors fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style Density fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style Regional fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+    </div>
+    
+    <div class="map-connector"></div>
+    
+    <!-- Flowchart 3: FORMATION OF AIR MASSES -->
+    <div class="flowchart-header">3. Formation & Source Regions of Air Masses</div>
+    <div class="mermaid">
+    flowchart TD
+        Title["FORMATION & SOURCE REGIONS"]
+        Title --> Source["Source Regions (Tracts of ocean, desert, or snow-covered plains)"]
+        Source --> Source_Bullets["• Large surfaces with uniform temperatures and humidity where air masses originate.<br>• Uneven warming and cooling of the earth's surface by the Sun gives rise to air masses.<br>• Most common in the tropics, subtropics, and high latitudes."]
+
+        Title --> WarmMass["Warm Air Mass Formation"]
+        WarmMass --> WarmMass_Bullets["• Form over the equator or desert areas where solar radiation is maximum.<br>• In clear, almost cloudless days, heat is reflected back to the atmosphere.<br>• The air becomes light and spreads."]
+
+        Title --> ColdMass["Cold Air Mass Formation"]
+        ColdMass --> ColdMass_Bullets["• Form near the poles where solar radiation is at a minimum.<br>• On cloudless days, snow cover reflects sunlight away, preventing warming.<br>• Cooling persisting for a long period forms cold air masses over a large area."]
+
+        style Title fill:#f1f5f9,stroke:#334155,stroke-width:2px
+        style Source fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style WarmMass fill:#fef2f2,stroke:#ef4444,stroke-width:1px
+        style ColdMass fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
+    </div>
+    
+    <div class="map-connector"></div>
+    
+    <!-- Flowchart 4: CLASSIFICATION & PROFILE -->
+    <div class="flowchart-header">4. Air Mass Classification & Detailed Profiles</div>
+    <div class="mermaid">
+    flowchart TD
+        Title["CLASSIFICATION & DETAILED AIR MASS PROFILES"]
+        Title --> mT["1. Maritime Tropical (mT)"]
+        Title --> mP["2. Maritime Polar (mP)"]
+        Title --> cP["3. Continental Polar (cP)"]
+        Title --> cT["4. Continental Tropical (cT)"]
+        Title --> A["5. Arctic (A)"]
+        Title --> H["6. Highland (H)"]
+
+        mT --> mT_Bullets["• Source: Warm waters of Gulf of Mexico & Gulf Stream (destabilize, add moisture, warm low levels).<br>• Temperature: Highs in 80s/90s (summer), 70s/80s (winter).<br>• Dewpoints: Always > 50°F (high dewpoints).<br>• Activity: S.E. US, expands in summer, moves equatorward in winter. Majority of US thunderstorms develop here.<br>• Modification: Over land it modifies to continental (lower sun angles, drier/cooler land below)."]
+
+        mP --> mP_Bullets["• Source: Cold ocean currents or high-latitude ocean waters.<br>• Temperature: Just above freezing to below 70°F. Near saturation.<br>• Activity: Widespread rain/snow via orographic lifting. Produces fog, drizzle, cloudy weather, long-lasting light/moderate rain.<br>• Modification: Mountain ranges produce rain/snow on windward side; lee side modifies to continental (often Pacific/back-door fronts)."]
+
+        cP --> cP_Bullets["• Features: Low dewpoints, cold temperatures, high degree of stability. Creates surface high pressure.<br>• Precipitation: Usually light due to dryness. Common on edges where it displaces mT air. Uplift via jet streaks, isentropic lift, PV advection.<br>• Modification: Modifies rapidly moving South (warmer soil, higher sun, lack of snow). Overrunning subtropical jet slows modification."]
+
+        cT --> cT_Bullets["• Source: Desert Southwest, high plains, and Mexico.<br>• Features: Low dewpoints, warm-to-hot afternoons, mild nights.<br>• Advection: Moves into mid-levels creating a cap of mild dry air. If it advects over boundary layer mT, severe thunderstorms threat increases.<br>• Boundary: Separated from mT by a dryline (severe storm boundary)."]
+
+        A --> A_Bullets["• Source: Northern Canada. Same as polar but colder with lower dewpoints.<br>• Formation: Stationary high over Eastern Alaska/Yukon. Lack of winter solar radiation, snow cover, and earth cooling drops temperatures to -30°F to -60°F.<br>• Activity: Meridional jet sends very cold air to US. Modifies to Polar then modified Polar behind cold fronts."]
+
+        H --> H_Bullets["• Source: Not one specific region; occurs with large elevation changes over short distances.<br>• Features: High terrain promotes dryness in the interior.<br>• Modification: mP and mT dry on leeward side via orographic descent.<br>• Dynamics: cP has difficulty entering due to high density of cold dense air which cannot move over elevated terrain."]
+
+        style Title fill:#f1f5f9,stroke:#334155,stroke-width:2px
+        style mT fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style mP fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style cP fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style cT fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style A fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style H fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+    </div>
+    
+  </div>
+</details>
+
 ### Introduction & Definition
 
 - Air mass is an extremely large body of air in the atmosphere.

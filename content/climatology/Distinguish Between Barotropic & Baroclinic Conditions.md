@@ -6,8 +6,8 @@
     <div class="flowchart-header">Barotropic vs. Baroclinic Comparison Map</div>
     <div class="mermaid">
     flowchart TD
-        A[Atmospheric States] --> B[Barotropic Condition]
-        A --> C[Baroclinic Condition]
+        A["Atmospheric States"] --> B["Barotropic Condition"]
+        A --> C["Baroclinic Condition"]
 
         B --> B1["- Isobars (pressure) are parallel to isosteres (density)<br>- Isobars & isotherms run parallel; zero baroclinicity<br>- Rare in reality; ideal state on sides of fronts"]
         

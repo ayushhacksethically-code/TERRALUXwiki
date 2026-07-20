@@ -6,8 +6,8 @@
     <div class="flowchart-header">Atmospheric Stability vs. Instability Map</div>
     <div class="mermaid">
     flowchart TD
-        A[Atmospheric Stability] --> B[Stable Atmosphere]
-        A --> C[Unstable Atmosphere]
+        A["Atmospheric Stability"] --> B["Stable Atmosphere"]
+        A --> C["Unstable Atmosphere"]
 
         B --> B1["- Behavior: Air parcels resist vertical motion & return to origin<br>- Lapse Rate: Environmental lapse rate slower than DALR/MALR<br>- Thermal Structure: Warmer air sits above cooler surface air<br>- Weather: suppressed clouds, clear skies, fog, or inversions<br>- Examples: Nighttime radiational cooling, high-pressure subsidence"]
         

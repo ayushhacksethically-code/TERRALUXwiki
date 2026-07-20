@@ -1,5 +1,56 @@
 ## Inversion of Temperature
 
+<details class="concept-map-toggle">
+  <summary class="btn-toggle-map"><i class="fa-regular fa-map"></i> View Concept Map & Visual Flowcharts</summary>
+  <div class="concept-map-container" style="background: #ffffff; padding: 15px;">
+    
+    <!-- Flowchart 1: INTRODUCTION & FAVOURABLE CONDITIONS -->
+    <div class="flowchart-header">1. Introduction & Favourable Conditions for Inversion</div>
+    <div class="mermaid">
+    flowchart TD
+        Title["INTRODUCTION & FAVOURABLE CONDITIONS FOR INVERSION"]
+        Title --> Intro["1. Introduction & Normal vs. Inversion States"]
+        Intro --> Intro_Bullets["• Normal State: Temperature decreases with altitude at normal lapse rate (1°C per 165 meters / average 6.5°C per 1000 meters).<br>• Inversion State: Situation reverses; temperature starts increasing with height.<br>• Occurrence: Most common in lowest few hundred meters of the troposphere; varies by place & time."]
+
+        Title --> Conditions["2. Favourable Conditions for Inversion"]
+        Conditions --> Cond_Bullets["• Long Winter Nights: Clear skies promote rapid terrestrial radiation cooling earth surface and contact air.<br>• Clear, Cloudless Sky: Radiation escapes unobstructed, cooling the ground and surface air quickly.<br>• Dry Air: Lacks water vapour that absorbs terrestrial radiation, allowing it to escape freely.<br>• Ice-covered Area: High albedo reduces solar heat absorption; night terrestrial radiation leaves ground freezing.<br>• Calm Atmosphere: Prevents wind mixing warm and cold air, keeping cold dense air trapped near the ground."]
+
+        style Title fill:#f1f5f9,stroke:#334155,stroke-width:2px
+        style Intro fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style Conditions fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+    </div>
+    
+    <div class="map-connector"></div>
+    
+    <!-- Flowchart 2: TYPES OF INVERSIONS -->
+    <div class="flowchart-header">2. Types of Temperature Inversion</div>
+    <div class="mermaid">
+    flowchart TD
+        Title["TYPES OF TEMPERATURE INVERSION"]
+        Title --> Surface["A. Surface Inversions (Ground-level)"]
+        Title --> UpperAir["B. Upper-Air Inversions (Subsidence)"]
+
+        Surface --> S1["1) Radiational Inversion"]
+        Surface --> S2["2) Advection Inversion"]
+        Surface --> S3["3) Drainage Inversion"]
+
+        S1 --> S1_Bullets["• Cause: Long winter nights with rapid longwave radiation emission.<br>• Process: Conduction cools air immediately above cold ground.<br>• Timing: Occurs in winter (short daylight, long nights) and is highly prevalent in high latitudes."]
+        S2 --> S2_Bullets["• Cause: Horizontal inflow of cold air (e.g., cool marine air blowing onto land).<br>• Features: Short-lived (typically overnight) and shallow.<br>• Occurrence: Can happen anytime of year depending on marine/land gradients."]
+        S3 --> S3_Bullets["• Cause: Cool air slides down mountain slopes into valleys due to gravity.<br>• Process: Cold dense air pools at valley floor, displacing warmer air upward.<br>• Term: Also called cold-air drainage inversion; common in mid-latitude winter valleys."]
+
+        UpperAir --> UA_Bullets["• Cause: Descending air from above (sinking air warms adiabatically by compression).<br>• Term: Also called subsidence inversions.<br>• Association: High-pressure conditions (subtropical latitudes or winter continental regions).<br>• Structure: Fairly deep (up to thousands of meters); base sits a few hundred meters aloft due to surface turbulence preventing descent to ground."]
+
+        style Title fill:#f1f5f9,stroke:#334155,stroke-width:2px
+        style Surface fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style UpperAir fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style S1 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style S2 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+        style S3 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+    </div>
+    
+  </div>
+</details>
+
 ### Introduction
 
 - Under normal environmental conditions, temperature usually decreases with an increase in altitude in the troposphere at a rate of 1 degree for every 165 meters.
