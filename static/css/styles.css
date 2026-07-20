@@ -225,6 +225,13 @@ a:hover {
   margin-bottom: 8px;
 }
 
+.text-cyan { color: #0284c7; }
+.text-violet { color: #7c3aed; }
+.text-rose { color: #e11d48; }
+.text-globe { color: #16a34a; }
+.text-weather { color: #ea580c; }
+.text-question { color: #db2777; }
+
 .card-title {
   font-family: Georgia, serif;
   font-size: 18px;

@@ -27,7 +27,7 @@
       <div class="card-glow"></div>
       <div class="card-content-wrapper">
         <div class="card-icon">
-          {{ if in .Title "Map" }}
+          {{ if or (in .Title "Map") (in .Title "Choropleth") (in .Title "Isopleth") }}
           <i class="fa-solid fa-map-location-dot text-cyan"></i>
           {{ else if in .Title "Chart" }}
           <i class="fa-solid fa-chart-bar text-violet"></i>
@@ -39,6 +39,12 @@
           <i class="fa-solid fa-calculator text-violet"></i>
           {{ else if in .Title "System" }}
           <i class="fa-solid fa-network-wired text-rose"></i>
+          {{ else if in .Title "Globalization" }}
+          <i class="fa-solid fa-earth-americas text-globe"></i>
+          {{ else if or (in .Title "Short") (in .Title "Questions") }}
+          <i class="fa-solid fa-clipboard-question text-question"></i>
+          {{ else if or (or (or (in .Title "Front") (in .Title "Climatic")) (or (in .Title "Stability") (in .Title "Temperature"))) (or (or (in .Title "Insolation") (in .Title "Precipitation")) (or (or (in .Title "Monsoon") (in .Title "Condensation")) (or (in .Title "Cyclone") (in .Title "Air Mass")))) }}
+          <i class="fa-solid fa-cloud-sun text-weather"></i>
           {{ else }}
           <i class="fa-solid fa-file-lines text-cyan"></i>
           {{ end }}
