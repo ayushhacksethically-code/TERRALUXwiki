@@ -1,24 +1,6 @@
 ## Difference Between Stability and Instability
 
-<details class="concept-map-toggle">
-  <summary class="btn-toggle-map"><i class="fa-regular fa-map"></i> View Concept Map & Visual Flowcharts</summary>
-  <div class="concept-map-container" style="background: #ffffff; padding: 15px;">
-    <div class="flowchart-header">Atmospheric Stability vs. Instability Map</div>
-    <div class="mermaid">
-    flowchart TD
-        A["Atmospheric Stability"] --> B["Stable Atmosphere"]
-        A --> C["Unstable Atmosphere"]
-
-        B --> B1["- Behavior: Air parcels resist vertical motion & return to origin<br>- Lapse Rate: Environmental lapse rate slower than DALR/MALR<br>- Thermal Structure: Warmer air sits above cooler surface air<br>- Weather: suppressed clouds, clear skies, fog, or inversions<br>- Examples: Nighttime radiational cooling, high-pressure subsidence"]
-        
-        C --> C1["- Behavior: Air parcels continue to rise on their own due to buoyancy<br>- Lapse Rate: Environmental lapse rate faster than DALR/MALR<br>- Thermal Structure: Cooler air sits above warmer surface air<br>- Weather: Convection, vertical clouds (cumulonimbus), rain, thunderstorms<br>- Examples: Surface solar heating, warm moist air below cool dry air"]
-
-        style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
-        style B fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
-        style C fill:#fef2f2,stroke:#ef4444,stroke-width:1px
-    </div>
-  </div>
-</details>
+<a href="/climatology/difference-between-stability-and-instability-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Introduction
 

@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $nonFlowcharts := where .Site.RegularPages "Params.flowchart" "!=" true }}
 <div class="container container-reading">
   <div class="reading-layout">
     <!-- Main Article -->
@@ -20,7 +21,7 @@
     <aside class="sidebar-card">
       <h3 class="sidebar-title" style="display: flex; align-items: center; gap: 8px;"><i class="fa-solid fa-map-location-dot text-cyan"></i> Cartographic</h3>
       <ul class="sidebar-list" style="margin-bottom: 25px;">
-        {{ range where .Site.RegularPages "Section" "cartographic" }}
+        {{ range where $nonFlowcharts "Section" "cartographic" }}
         <li class="sidebar-item{{ if eq .Permalink $.Permalink }} active{{ end }}">
           <a href="{{ .RelPermalink }}" class="sidebar-link">
             <span class="sidebar-item-title">{{ .Title }}</span>
@@ -31,7 +32,7 @@
 
       <h3 class="sidebar-title" style="display: flex; align-items: center; gap: 8px; border-top: 1px solid var(--border-color); padding-top: 15px; margin-top: 15px;"><i class="fa-solid fa-cloud-sun text-weather"></i> Climatology</h3>
       <ul class="sidebar-list">
-        {{ range where .Site.RegularPages "Section" "climatology" }}
+        {{ range where $nonFlowcharts "Section" "climatology" }}
         <li class="sidebar-item{{ if eq .Permalink $.Permalink }} active{{ end }}">
           <a href="{{ .RelPermalink }}" class="sidebar-link">
             <span class="sidebar-item-title">{{ .Title }}</span>

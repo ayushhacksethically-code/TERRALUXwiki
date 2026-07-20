@@ -1,5 +1,7 @@
 ## Short Questions with Answers (3rd Semester Honours - 2022-2023): Climatology (CC5)
 
+<a href="/climatology/short-questions-2022-2023-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+
 ### 1) Potential Evapotranspiration (PET)
 
 - Potential evapotranspiration (PET) is the total amount of evapotranspiration, or evaporation, that may occur if plenty of water is present in the soil, a water source, or plants.

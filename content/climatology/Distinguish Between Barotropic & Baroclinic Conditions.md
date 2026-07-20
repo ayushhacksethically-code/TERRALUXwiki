@@ -1,24 +1,6 @@
 ## Distinguish Between Barotropic & Baroclinic Conditions
 
-<details class="concept-map-toggle">
-  <summary class="btn-toggle-map"><i class="fa-regular fa-map"></i> View Concept Map & Visual Flowcharts</summary>
-  <div class="concept-map-container" style="background: #ffffff; padding: 15px;">
-    <div class="flowchart-header">Barotropic vs. Baroclinic Comparison Map</div>
-    <div class="mermaid">
-    flowchart TD
-        A["Atmospheric States"] --> B["Barotropic Condition"]
-        A --> C["Baroclinic Condition"]
-
-        B --> B1["- Isobars (pressure) are parallel to isosteres (density)<br>- Isobars & isotherms run parallel; zero baroclinicity<br>- Rare in reality; ideal state on sides of fronts"]
-        
-        C --> C1["- Constant pressure surfaces intersect density surfaces<br>- Belts of sharp meteorological gradient (~1000 km wide)<br>- Driven by vertical wind shear & rising warm air<br>- Prompts mid-latitude disturbances (cyclones)"]
-
-        style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
-        style B fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
-        style C fill:#fef2f2,stroke:#ef4444,stroke-width:1px
-    </div>
-  </div>
-</details>
+<a href="/climatology/distinguish-between-barotropic-baroclinic-conditions-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Introduction
 

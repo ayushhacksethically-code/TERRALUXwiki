@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $pages := where .Pages "Params.flowchart" "!=" true }}
 <div class="container content-section" style="margin-top: 30px;">
   <div class="section-header" style="flex-direction: column; align-items: flex-start; gap: 10px;">
     <a href="{{ site.Home.RelPermalink }}" class="back-link" style="margin-bottom: 0;"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
@@ -10,12 +11,12 @@
       {{ else }}
       <i class="fa-solid fa-folder-open"></i> {{ .Title }}
       {{ end }}
-      <span class="category-count">{{ len .Pages }} topics</span>
+      <span class="category-count">{{ len $pages }} topics</span>
     </h1>
   </div>
 
   <div class="cards-grid">
-    {{ range .Pages }}
+    {{ range $pages }}
     <a href="{{ .RelPermalink }}" class="topic-card">
       <div class="card-glow"></div>
       <div class="card-content-wrapper">

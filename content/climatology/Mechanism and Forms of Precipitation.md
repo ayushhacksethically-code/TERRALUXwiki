@@ -1,5 +1,7 @@
 ## Mechanism and Forms of Precipitation
 
+<a href="/climatology/mechanism-and-forms-of-precipitation-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+
 ### Bergeron-Findeisen Process
 
 - The Bergeron theory (Bergeron-Findeisen theory) was proposed around 1930 by T. Bergeron and subsequently developed by W. Findeisen.

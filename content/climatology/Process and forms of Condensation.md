@@ -1,5 +1,7 @@
 ## Process and forms of Condensation
 
+<a href="/climatology/process-and-forms-of-condensation-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+
 ### Process of Condensation
 
 - Condensation is the process by which water vapour changes from a gaseous state to a liquid state.

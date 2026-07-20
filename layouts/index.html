@@ -1,4 +1,7 @@
 {{ define "main" }}
+{{ $nonFlowcharts := where .Site.RegularPages "Params.flowchart" "!=" true }}
+{{ $cartographic := where $nonFlowcharts "Section" "cartographic" }}
+{{ $climatology := where $nonFlowcharts "Section" "climatology" }}
 <div class="hero-section">
   <div class="container text-center">
     <h1 class="hero-title">TERRALUX</h1>
@@ -14,7 +17,7 @@
 
 <div class="container content-section">
   <div class="section-header">
-    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Syllabus Topics ({{ len .Site.RegularPages }})</h2>
+    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Syllabus Topics ({{ len $nonFlowcharts }})</h2>
     <div class="view-toggles">
       <span class="badge"><i class="fa-solid fa-circle text-success"></i> All Content Loaded</span>
     </div>
@@ -25,10 +28,10 @@
     <div class="category-group" id="group-cartographic">
       <div class="category-title-bar">
         <h3 class="category-title"><i class="fa-solid fa-map-location-dot text-cyan"></i> Cartographic Techniques</h3>
-        <span class="category-count">{{ len (where .Site.RegularPages "Section" "cartographic") }} topics</span>
+        <span class="category-count">{{ len $cartographic }} topics</span>
       </div>
       <div class="cards-grid">
-        {{ range where .Site.RegularPages "Section" "cartographic" }}
+        {{ range $cartographic }}
         <a href="{{ .RelPermalink }}" class="topic-card" data-title="{{ .Title | lower }}" data-content="{{ .Content | plainify | lower }}">
           <div class="card-glow"></div>
           <div class="card-content-wrapper">
@@ -67,10 +70,10 @@
     <div class="category-group" id="group-climatology" style="margin-top: 30px;">
       <div class="category-title-bar">
         <h3 class="category-title"><i class="fa-solid fa-cloud-sun text-weather"></i> Climatology</h3>
-        <span class="category-count">{{ len (where .Site.RegularPages "Section" "climatology") }} topics</span>
+        <span class="category-count">{{ len $climatology }} topics</span>
       </div>
       <div class="cards-grid">
-        {{ range where .Site.RegularPages "Section" "climatology" }}
+        {{ range $climatology }}
         <a href="{{ .RelPermalink }}" class="topic-card" data-title="{{ .Title | lower }}" data-content="{{ .Content | plainify | lower }}">
           <div class="card-glow"></div>
           <div class="card-content-wrapper">

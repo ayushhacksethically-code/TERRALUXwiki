@@ -1,5 +1,7 @@
 ## Factors Affecting the Horizontal Distribution of Temperature
 
+<a href="/climatology/factors-affecting-the-horizontal-distribution-of-temperature-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+
 ### Introduction
 
 - Temperature is a measure of the warmth or coldness of an object, substance, or environment, typically measured in degrees on a standard scale.

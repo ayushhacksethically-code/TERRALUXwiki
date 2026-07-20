@@ -1,54 +1,6 @@
 ## Insolation
 
-<details class="concept-map-toggle">
-  <summary class="btn-toggle-map"><i class="fa-regular fa-map"></i> View Concept Map & Visual Flowcharts</summary>
-  <div class="concept-map-container" style="background: #ffffff; padding: 15px;">
-    
-    <!-- Flowchart 1: INTRODUCTION & DEFINITION -->
-    <div class="flowchart-header">1. Introduction & Definition of Insolation</div>
-    <div class="mermaid">
-    flowchart TD
-        Title["INTRODUCTION & DEFINITION OF INSOLATION"]
-        Title --> Rad["Solar Radiation / Insolation"]
-        Rad --> Rad_Bullets["• Definition: The radiant energy received from the sun, transmitted in shortwave (1/250 - 1/6700 mm), travelling at 186,000 miles/second.<br>• Measurement: Amount of solar energy received per square centimetre per minute.<br>• Source: The sun is the primary source of energy on earth, radiating energy in all directions.<br>• Earth's Share: Only two billionths (2 out of 100,000,000 units) reaches the earth's surface.<br>• Absorption: Water vapour, dust particles, ozone, and other gases absorb a small amount of insolation.<br>• Distribution: Varies by place & time (maximum in tropical regions, decreasing poleward; more in summer, less in winter)."]
-
-        style Title fill:#f1f5f9,stroke:#334155,stroke-width:2px
-        style Rad fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    </div>
-    
-    <div class="map-connector"></div>
-    
-    <!-- Flowchart 2: FACTORS AFFECTING INSOLATION -->
-    <div class="flowchart-header">2. Factors Affecting Insolation</div>
-    <div class="mermaid">
-    flowchart TD
-        Title["FACTORS AFFECTING INSOLATION"]
-        Title --> Angle["1. The Angle of Sun's Rays"]
-        Title --> DayLength["2. Duration of the Day"]
-        Title --> Distance["3. Earth's Distance from the Sun"]
-        Title --> Sunspots["4. Sunspots"]
-        Title --> Transp["5. Transparency of the Atmosphere"]
-
-        Angle --> Angle_Bullets["• Spherical geoid earth causes rays to strike at different angles based on latitude.<br>• Higher latitude = smaller striking angle.<br>• Area coverage:<br>  - Vertical rays cover a small area (Ray b: Equator, short atmospheric travel, high intensity).<br>  - Slanting rays cover a large area (Ray a: polar, long atmospheric travel, lower intensity).<br>• Large area coverage spreads the energy, decreasing net energy received per unit area."]
-
-        DayLength --> DayLength_Bullets["• Determines duration of sunlight, affecting total solar radiation received.<br>• Longer sunshine = greater quantity of received solar radiation.<br>• Equator: Length of day/night is consistently 12 hours in all months.<br>• Polar Circles: Day length varies between 0 and 24 hours.<br>• Equinoxes (Sept 23 & March 21): Noon sun is overhead at equator. Days & nights are equal (12 hours) globally; maximum insolation at equator.<br>• Solstices: Summer Solstice (June 20-22) & Winter Solstice (Dec 21-22) with 23.5° axial tilt."]
-
-        Distance --> Distance_Bullets["• Elliptical orbit causes annual distance variations between sun and earth.<br>• Mean Distance: ~149.6 million km (92.9 million miles).<br>• Aphelion (July 4): Farthest distance (152 million km / 94.5 million miles). NH faces sun, receiving 7% less energy than SH receives in Perihelion.<br>• Perihelion (Jan 3): Closest distance (147 million km / 91.4 million miles)."]
-
-        Sunspots --> Sunspots_Bullets["• Dark, cooler areas (1500°C lower than surrounding chromosphere) visible on the solar photosphere.<br>• Relationship: Increasing sunspots = increased solar radiation output = increased insolation received on earth.<br>• Cycle: Number of sunspots varies in a regular 11-year cycle."]
-
-        Transp --> Transp_Bullets["• Atmosphere is not fully transparent due to varying composition and layers.<br>• Controlling factor determining how much radiation reaches the surface.<br>• Components: Water vapour (gaseous water), dust, particulate matter.<br>• Gases: Nitrogen (N), Oxygen (O2), Argon, Carbon dioxide, Neon (Ne), Helium (He), Methane (CH4), Krypton (Kr), Ozone (O3), Nitrous oxide (N2O), Hydrogen (H), Xenon (Xe)."]
-
-        style Title fill:#f1f5f9,stroke:#334155,stroke-width:2px
-        style Angle fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-        style DayLength fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-        style Distance fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-        style Sunspots fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-        style Transp fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    </div>
-    
-  </div>
-</details>
+<a href="/climatology/insolation-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Introduction & Definition
 

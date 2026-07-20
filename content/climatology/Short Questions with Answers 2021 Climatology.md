@@ -1,5 +1,7 @@
 ## Short Questions with Answers (3rd Semester Honours - 2021 held in 2022): Climatology (CC5)
 
+<a href="/climatology/short-questions-2021-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+
 ### 1) Albedo
 
 - Albedo is the amount of sunlight (solar radiation) reflected by a surface.

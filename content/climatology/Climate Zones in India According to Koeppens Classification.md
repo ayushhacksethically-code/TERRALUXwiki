@@ -1,5 +1,7 @@
 ## Climate Zones in India According to Koeppen's Classification
 
+<a href="/climatology/climate-zones-in-india-according-to-koeppens-classification-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+
 ### Introduction
 
 - Wladimir Köppen (1846-1940) was born in Russia and was a great German Climatologist as well as an amateur botanist.
