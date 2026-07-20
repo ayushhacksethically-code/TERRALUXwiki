@@ -1,5 +1,37 @@
 ## Differences between Frontogenesis and Frontolysis
 
+<details class="concept-map-toggle">
+  <summary class="btn-toggle-map"><i class="fa-regular fa-map"></i> View Concept Map & Visual Flowcharts</summary>
+  <div class="concept-map-container">
+    <div class="flowchart-header">Frontogenesis vs. Frontolysis Comparison Map</div>
+    <div class="map-row">
+      <div class="map-node primary">
+        <div class="map-node-title">Frontogenesis (Strengthening)</div>
+        <div class="map-node-content">
+          <ul>
+            <li><strong>Definition:</strong> The formation or intensification of a weather front.</li>
+            <li><strong>Mechanism:</strong> Convergence of air masses with different properties (e.g., temperature).</li>
+            <li><strong>Result:</strong> Steepened temperature contrasts and distinct boundaries.</li>
+            <li><strong>Conditions:</strong> Forced convergence, causing lifting and subsequent thermal changes.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="map-node accent">
+        <div class="map-node-title">Frontolysis (Weakening)</div>
+        <div class="map-node-content">
+          <ul>
+            <li><strong>Definition:</strong> The weakening or dissipation of a weather front.</li>
+            <li><strong>Mechanism:</strong> Decrease in temperature contrast between the two air masses.</li>
+            <li><strong>Result:</strong> Diffuse boundaries leading to ultimate dissipation.</li>
+            <li><strong>Conditions:</strong> Mixing of air masses or rising air that reduces horizontal temperature differences.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</details>
+
 ### Introduction
 
 - Frontogenesis and frontolysis represent opposing processes related to the development and decay of weather fronts.

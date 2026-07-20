@@ -1,5 +1,39 @@
 ## Difference Between Stability and Instability
 
+<details class="concept-map-toggle">
+  <summary class="btn-toggle-map"><i class="fa-regular fa-map"></i> View Concept Map & Visual Flowcharts</summary>
+  <div class="concept-map-container">
+    <div class="flowchart-header">Atmospheric Stability vs. Instability Map</div>
+    <div class="map-row">
+      <div class="map-node primary">
+        <div class="map-node-title">Stability (Resistant)</div>
+        <div class="map-node-content">
+          <ul>
+            <li><strong>Behavior:</strong> Air parcels resist upward motion and return to original position.</li>
+            <li><strong>Lapse Rate:</strong> Environmental lapse rate is slower than DALR/MALR.</li>
+            <li><strong>Structure:</strong> Warmer air lies above cooler surface air (stable stratification).</li>
+            <li><strong>Weather:</strong> suppressed clouds, clear skies, fog, calm winds, or temperature inversions.</li>
+            <li><strong>Examples:</strong> Subsidence in high pressure, nighttime ground radiation cooling.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="map-node accent">
+        <div class="map-node-title">Instability (Buoyant)</div>
+        <div class="map-node-content">
+          <ul>
+            <li><strong>Behavior:</strong> Air parcels continue to rise on their own due to buoyancy.</li>
+            <li><strong>Lapse Rate:</strong> Environmental lapse rate is faster than DALR/MALR.</li>
+            <li><strong>Structure:</strong> Colder air lies above warmer surface air (unstable stratification).</li>
+            <li><strong>Weather:</strong> Updrafts, vertical clouds (cumulonimbus), rain, thunderstorms, tornadoes.</li>
+            <li><strong>Examples:</strong> Surface solar heating, warm moist advection underneath dry aloft.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</details>
+
 ### Introduction
 
 - In climatology, stability and instability refer to the vertical temperature structure of the atmosphere and how it affects the behavior of air parcels.
