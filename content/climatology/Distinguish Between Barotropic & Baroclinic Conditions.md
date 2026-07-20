@@ -2,31 +2,20 @@
 
 <details class="concept-map-toggle">
   <summary class="btn-toggle-map"><i class="fa-regular fa-map"></i> View Concept Map & Visual Flowcharts</summary>
-  <div class="concept-map-container">
+  <div class="concept-map-container" style="background: #ffffff; padding: 15px;">
     <div class="flowchart-header">Barotropic vs. Baroclinic Comparison Map</div>
-    <div class="map-row">
-      <div class="map-node primary">
-        <div class="map-node-title">Barotropic Condition</div>
-        <div class="map-node-content">
-          <ul>
-            <li><strong>Definition:</strong> Constant pressure surfaces (isobars) are parallel to constant density surfaces (isosteres).</li>
-            <li><strong>Cross-section:</strong> Isobars and isotherms run parallel; zero baroclinicity.</li>
-            <li><strong>Occurrence:</strong> Theoretically ideal, rare in reality; found on the sides of frontogenesis zones.</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node accent">
-        <div class="map-node-title">Baroclinic Condition</div>
-        <div class="map-node-content">
-          <ul>
-            <li><strong>Definition:</strong> Pressure surfaces intersect density/temperature surfaces.</li>
-            <li><strong>Zones:</strong> Narrow zones of thermal discontinuity (fronts, ~1000 km in width).</li>
-            <li><strong>Dynamics:</strong> Sharp gradients; origin of mid-latitude cyclonic disturbances.</li>
-            <li><strong>Instability:</strong> Warm air rising, vertical wind shear, and upper-level divergence.</li>
-          </ul>
-        </div>
-      </div>
+    <div class="mermaid">
+    flowchart TD
+        A[Atmospheric States] --> B[Barotropic Condition]
+        A --> C[Baroclinic Condition]
+
+        B --> B1["- Isobars (pressure) are parallel to isosteres (density)<br>- Isobars & isotherms run parallel; zero baroclinicity<br>- Rare in reality; ideal state on sides of fronts"]
+        
+        C --> C1["- Constant pressure surfaces intersect density surfaces<br>- Belts of sharp meteorological gradient (~1000 km wide)<br>- Driven by vertical wind shear & rising warm air<br>- Prompts mid-latitude disturbances (cyclones)"]
+
+        style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+        style B fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
+        style C fill:#fef2f2,stroke:#ef4444,stroke-width:1px
     </div>
   </div>
 </details>

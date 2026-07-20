@@ -2,32 +2,20 @@
 
 <details class="concept-map-toggle">
   <summary class="btn-toggle-map"><i class="fa-regular fa-map"></i> View Concept Map & Visual Flowcharts</summary>
-  <div class="concept-map-container">
+  <div class="concept-map-container" style="background: #ffffff; padding: 15px;">
     <div class="flowchart-header">Frontogenesis vs. Frontolysis Comparison Map</div>
-    <div class="map-row">
-      <div class="map-node primary">
-        <div class="map-node-title">Frontogenesis (Strengthening)</div>
-        <div class="map-node-content">
-          <ul>
-            <li><strong>Definition:</strong> The formation or intensification of a weather front.</li>
-            <li><strong>Mechanism:</strong> Convergence of air masses with different properties (e.g., temperature).</li>
-            <li><strong>Result:</strong> Steepened temperature contrasts and distinct boundaries.</li>
-            <li><strong>Conditions:</strong> Forced convergence, causing lifting and subsequent thermal changes.</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node accent">
-        <div class="map-node-title">Frontolysis (Weakening)</div>
-        <div class="map-node-content">
-          <ul>
-            <li><strong>Definition:</strong> The weakening or dissipation of a weather front.</li>
-            <li><strong>Mechanism:</strong> Decrease in temperature contrast between the two air masses.</li>
-            <li><strong>Result:</strong> Diffuse boundaries leading to ultimate dissipation.</li>
-            <li><strong>Conditions:</strong> Mixing of air masses or rising air that reduces horizontal temperature differences.</li>
-          </ul>
-        </div>
-      </div>
+    <div class="mermaid">
+    flowchart TD
+        A[Frontal Processes] --> B[Frontogenesis]
+        A --> C[Frontolysis]
+
+        B --> B1["- Definition: Formation or strengthening of a front<br>- Mechanism: Convergence of air masses with different properties<br>- Result: Intensified temp gradients & distinct boundaries<br>- Conditions: Forced convergence, causing lifting & thermal change"]
+        
+        C --> C1["- Definition: Weakening or dissipation of a front<br>- Mechanism: Decreased temp contrast between air masses<br>- Result: Diffuse boundaries leading to ultimate dissipation<br>- Conditions: Mixing of air masses or rising air that reduces contrast"]
+
+        style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+        style B fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
+        style C fill:#fef2f2,stroke:#ef4444,stroke-width:1px
     </div>
   </div>
 </details>

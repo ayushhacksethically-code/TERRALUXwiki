@@ -2,34 +2,20 @@
 
 <details class="concept-map-toggle">
   <summary class="btn-toggle-map"><i class="fa-regular fa-map"></i> View Concept Map & Visual Flowcharts</summary>
-  <div class="concept-map-container">
+  <div class="concept-map-container" style="background: #ffffff; padding: 15px;">
     <div class="flowchart-header">Atmospheric Stability vs. Instability Map</div>
-    <div class="map-row">
-      <div class="map-node primary">
-        <div class="map-node-title">Stability (Resistant)</div>
-        <div class="map-node-content">
-          <ul>
-            <li><strong>Behavior:</strong> Air parcels resist upward motion and return to original position.</li>
-            <li><strong>Lapse Rate:</strong> Environmental lapse rate is slower than DALR/MALR.</li>
-            <li><strong>Structure:</strong> Warmer air lies above cooler surface air (stable stratification).</li>
-            <li><strong>Weather:</strong> suppressed clouds, clear skies, fog, calm winds, or temperature inversions.</li>
-            <li><strong>Examples:</strong> Subsidence in high pressure, nighttime ground radiation cooling.</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node accent">
-        <div class="map-node-title">Instability (Buoyant)</div>
-        <div class="map-node-content">
-          <ul>
-            <li><strong>Behavior:</strong> Air parcels continue to rise on their own due to buoyancy.</li>
-            <li><strong>Lapse Rate:</strong> Environmental lapse rate is faster than DALR/MALR.</li>
-            <li><strong>Structure:</strong> Colder air lies above warmer surface air (unstable stratification).</li>
-            <li><strong>Weather:</strong> Updrafts, vertical clouds (cumulonimbus), rain, thunderstorms, tornadoes.</li>
-            <li><strong>Examples:</strong> Surface solar heating, warm moist advection underneath dry aloft.</li>
-          </ul>
-        </div>
-      </div>
+    <div class="mermaid">
+    flowchart TD
+        A[Atmospheric Stability] --> B[Stable Atmosphere]
+        A --> C[Unstable Atmosphere]
+
+        B --> B1["- Behavior: Air parcels resist vertical motion & return to origin<br>- Lapse Rate: Environmental lapse rate slower than DALR/MALR<br>- Thermal Structure: Warmer air sits above cooler surface air<br>- Weather: suppressed clouds, clear skies, fog, or inversions<br>- Examples: Nighttime radiational cooling, high-pressure subsidence"]
+        
+        C --> C1["- Behavior: Air parcels continue to rise on their own due to buoyancy<br>- Lapse Rate: Environmental lapse rate faster than DALR/MALR<br>- Thermal Structure: Cooler air sits above warmer surface air<br>- Weather: Convection, vertical clouds (cumulonimbus), rain, thunderstorms<br>- Examples: Surface solar heating, warm moist air below cool dry air"]
+
+        style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+        style B fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
+        style C fill:#fef2f2,stroke:#ef4444,stroke-width:1px
     </div>
   </div>
 </details>

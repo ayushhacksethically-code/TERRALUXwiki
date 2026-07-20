@@ -2,266 +2,136 @@
 
 <details class="concept-map-toggle">
   <summary class="btn-toggle-map"><i class="fa-regular fa-map"></i> View Concept Map & Visual Flowcharts</summary>
-  <div class="concept-map-container">
+  <div class="concept-map-container" style="background: #ffffff; padding: 15px;">
     
     <!-- Flowchart 1: NOMENCLATURE, SPATIAL-TEMPORAL DISTRIBUTION & FORMATION -->
     <div class="flowchart-header">1. Nomenclature, Spatial-Temporal Distribution & Formation</div>
-    <div class="map-row">
-      <div class="map-node primary">
-        <div class="map-node-title">Nomenclature</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Mid-latitude depressions</li>
-            <li>Extra-tropical cyclones</li>
-            <li>Frontal depressions</li>
-            <li>Wave cyclones</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node secondary">
-        <div class="map-node-title">Distribution</div>
-        <div class="map-node-content">
-          <ul>
-            <li><strong>Latitudinal Range:</strong> 35° to 65° in both hemispheres</li>
-            <li><strong>Geographic Regions:</strong> Atlantic Ocean & NW Europe</li>
-            <li><strong>Movement & Season:</strong> West to East; More pronounced in winter seasons</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node accent">
-        <div class="map-node-title">Formation Mechanism</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Wavelike twist/perturbation on convergent fronts</li>
-            <li>Occurs in the Frontogenesis Zone (35°-65° latitudes)</li>
-          </ul>
-        </div>
-      </div>
+    <div class="mermaid">
+    flowchart TD
+        A[Temperate Cyclone] --> B[Nomenclature]
+        A --> C[Distribution]
+        A --> D[Formation]
+
+        B --> B1["- Mid-latitude depressions<br>- Extra-tropical cyclones<br>- Frontal depressions<br>- Wave cyclones"]
+        
+        C --> C1["- Latitudinal: 35° to 65° in both hemispheres<br>- Geographic: Atlantic Ocean & NW Europe<br>- Movement: West to East (winter active)"]
+        
+        D --> D1["- Wavelike twist/perturbation on fronts<br>- Frontogenesis Zone (35°-65° latitudes)"]
+
+        style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+        style B fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
+        style C fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
+        style D fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
     </div>
     
     <div class="map-connector"></div>
     
     <!-- Flowchart 2: CHARACTERISTICS OF TEMPERATE CYCLONE -->
     <div class="flowchart-header">2. Characteristics of Temperate Cyclone</div>
-    <div class="map-row">
-      <div class="map-node primary">
-        <div class="map-node-title">Emergence & Classification</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Storm systems in mid & high latitudes (completely away from tropics)</li>
-            <li>Also called: Mid-latitude storms, Baroclinic storms</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node secondary">
-        <div class="map-node-title">Structural & Frontal Composition</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Low-pressure system containing: Cold Front, Warm Front, and Occluded Front</li>
-            <li>Pockets of warm air compressed between forward & rear cold air</li>
-            <li>Warm air climbs over cold air → clouds form ahead of warm front → rainfall</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node accent">
-        <div class="map-node-title">Airflow & Circulation (NH)</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Cold air blows from the <strong>NORTH</strong> of the front</li>
-            <li>Warm air blows from the <strong>SOUTH</strong> of the front</li>
-            <li>Pressure drop initiates an <strong>ANTICLOCKWISE</strong> cyclonic circulation</li>
-          </ul>
-        </div>
-      </div>
+    <div class="mermaid">
+    flowchart TD
+        A[Characteristics] --> B[Emergence & Classification]
+        A --> C[Structural Composition]
+        A --> D[Airflow & Circulation]
+
+        B --> B1["- Mid & high latitude storm systems<br>- Away from tropics<br>- Baroclinic / Mid-latitude storms"]
+        
+        C --> C1["- Low pressure containing warm, cold & occluded fronts<br>- Pockets of warm air compressed by cold air<br>- Warm air climbs over cold air causing rain"]
+        
+        D --> D1["- Cold air blows from North<br>- Warm air blows from South<br>- Pressure drop triggers anticlockwise circulation (NH)"]
+
+        style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+        style B fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
+        style C fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
+        style D fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
     </div>
     
     <div class="map-connector"></div>
     
     <!-- Flowchart 3: FRONTAL DEFINITIONS AND CLASSIFICATIONS -->
     <div class="flowchart-header">3. Frontal Definitions & Classifications</div>
-    <div class="map-row">
-      <div class="map-node primary">
-        <div class="map-node-title">Warm Front</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Active advancing warm air mass</li>
-            <li><strong>N. Hemisphere:</strong> SE, right side of warm air movement</li>
-            <li><strong>S. Hemisphere:</strong> SE, left side of warm air movement</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node secondary">
-        <div class="map-node-title">Cold Front</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Active advancing cold air mass</li>
-            <li><strong>N. Hemisphere:</strong> NW, right side of cold air movement</li>
-            <li><strong>S. Hemisphere:</strong> SW, left side of cold air movement</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node accent">
-        <div class="map-node-title">Occluded Front</div>
-        <div class="map-node-content">
-          <ul>
-            <li><strong>Meaning:</strong> Constriction, compression, blocking, or sealing</li>
-            <li><strong>Physical:</strong> Complete removal of fronts from ground level (suspended in sky)</li>
-            <li><strong>Trigger:</strong> Cold air occupies ground space around clubbed fronts</li>
-            <li><strong>Lifespan:</strong> Short period in suspension</li>
-          </ul>
-        </div>
-      </div>
+    <div class="mermaid">
+    flowchart TD
+        A[Frontal Types] --> B[Warm Front]
+        A --> C[Cold Front]
+        A --> D[Occluded Front]
+
+        B --> B1["- Warm air mass is active & advancing<br>- NH: Southeast, right side of warm air movement<br>- SH: Southeast, left side of warm air movement"]
+        
+        C --> C1["- Cold air mass is active & advancing<br>- NH: Northwest, right side of cold air movement<br>- SH: Southwest, left side of cold air movement"]
+        
+        D --> D1["- Blocking, sealing, or removal of fronts from ground<br>- Cold air occupies ground space around clubbed fronts<br>- Exists for a short time suspended in sky"]
+
+        style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+        style B fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
+        style C fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
+        style D fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
     </div>
     
     <div class="map-connector"></div>
     
     <!-- Flowchart 4: ORIGIN OF TEMPERATE CYCLONE: THE POLAR FRONT THEORY -->
     <div class="flowchart-header">4. Origin of Temperate Cyclone: Polar Front Theory</div>
-    <div class="map-row">
-      <div class="map-node primary">
-        <div class="map-node-title">Air Mass Convergence</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Warm-humid air (Tropics) + Dry-cold air (Poles) = <strong>Polar Front</strong></li>
-            <li>Formed between sub-tropical highs & sub-polar lows</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node secondary">
-        <div class="map-node-title">Physical Interaction & Instability</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Cold air is denser/heavier → occupies lower ground space</li>
-            <li>Warm air is mechanically pushed up</li>
-            <li>Instability generated → Low Pressure created at the junction</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node accent">
-        <div class="map-node-title">Wave Formation & Kinematics (NH)</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Wave along front indicates thermal contrast</li>
-            <li>Warm air moves Northward as Westerlies</li>
-            <li>Cold air deflected to become NW winds behind the cold front</li>
-            <li>Deflections follow Ferrel's Law (deflects to the right)</li>
-            <li><strong>Eastern Part:</strong> Dominated by warm air</li>
-            <li><strong>Western Part:</strong> Dominated by cold air</li>
-          </ul>
-        </div>
-      </div>
+    <div class="mermaid">
+    flowchart TD
+        A[Polar Front Theory] --> B[Air Mass Convergence]
+        B --> C[Physical Interaction & Instability]
+        C --> D[Wave Formation & Kinematics]
+
+        B --> B1["- Warm-humid air + Dry-cold air = Polar Front<br>- Occurs between subtropical highs & subpolar lows"]
+        C --> C1["- Denser cold air occupies lower ground space<br>- Lighter warm air is mechanically pushed up<br>- Low pressure forms at center/junction"]
+        D --> D1["- NH: Warm air moves Northward as Westerlies<br>- NH: Cold air deflected right, becoming NW winds<br>- NH: Frontal asymmetry (East is warm, West is cold)"]
+
+        style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+        style B fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
+        style C fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
+        style D fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
     </div>
     
     <div class="map-connector"></div>
     
     <!-- Flowchart 5: STAGES OF CYCLONE DEVELOPMENT -->
     <div class="flowchart-header">5. Stages of Mid-Latitude Cyclone Development</div>
-    <div class="map-row">
-      <div class="map-node primary">
-        <div class="map-node-title">Stage I: Stationary</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Cold & warm air masses converge along central axis</li>
-            <li>Stable contact; minimal initial instability</li>
-            <li>At late phase: advancing forces bend/turn the flat front</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node secondary">
-        <div class="map-node-title">Stage II: Young Adult</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Fronts differentiate: Warm front (East) & Cold front (West)</li>
-            <li>Junction becomes increasingly sharp; warm sector shrinks</li>
-            <li>Rising warm air cools → condensation → latent heat released → pressure drops further</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node accent">
-        <div class="map-node-title">Stage III: Mature</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Low pressure fully initiated at Wave Apex; vertical updraft</li>
-            <li>Isobars tighten; pressure gradient becomes very sharp</li>
-            <li>Steered from West to East by Westerlies; rapid weather changes</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node dark">
-        <div class="map-node-title">Stage IV: Occlusion</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Faster cold front overtakes warm front → merges into <strong>Occluded Front</strong></li>
-            <li>Wave Apex weakens; wind velocity declines</li>
-            <li>Discontinuity lifted entirely off the ground into the sky</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node primary">
-        <div class="map-node-title">Stage V: Dissipation</div>
-        <div class="map-node-content">
-          <ul>
-            <li>Cyclone substantially weakened</li>
-            <li>Dense cold air governs former warm areas</li>
-            <li>Low pressure eliminated; atmosphere returns to normal</li>
-          </ul>
-        </div>
-      </div>
+    <div class="mermaid">
+    flowchart TD
+        S1[Stage I: Stationary] --> S2[Stage II: Young Adult]
+        S2 --> S3[Stage III: Mature]
+        S3 --> S4[Stage IV: Occlusion]
+        S4 --> S5[Stage V: Dissipation]
+
+        S1 --> S1d["- Cold & warm air masses converge along central axis<br>- Differences exist but stable; late phase bends front"]
+        S2 --> S2d["- Fronts separate: Warm front (East), Cold front (West)<br>- Warm air climbs cold air, latent heat drops pressure"]
+        S3 --> S3d["- Low pressure core forms; vertical whirling updraft<br>- Isobars tighten; steers West to East via Westerlies"]
+        S4 --> S4d["- Cold front overtakes warm front → Occluded Front<br>- Frontal convergence detached from ground, stays in sky"]
+        S5 --> S5d["- Cyclone weakened; cold air governs ground level<br>- Pushed-up warm air cools; pressure core is eliminated"]
+
+        style S1 fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
+        style S2 fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
+        style S3 fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
+        style S4 fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
+        style S5 fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
     </div>
     
     <div class="map-connector"></div>
     
     <!-- Flowchart 6: KEY DEFINITIONS & TERMINOLOGY -->
     <div class="flowchart-header">6. Key Definitions & Terminology</div>
-    <div class="map-row">
-      <div class="map-node primary">
-        <div class="map-node-title">Basic Weather Map Terms</div>
-        <div class="map-node-content">
-          <ul>
-            <li><strong>Cyclone:</strong> Low-pressure area enclosed by circular/elliptical isobars.</li>
-            <li><strong>Trough:</strong> Elongated low-pressure system.</li>
-            <li><strong>Isobars:</strong> Lines joining places of equal atmospheric pressure.</li>
-            <li><strong>Pressure Gradient:</strong> Rate of change of atmospheric pressure over distance.</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node secondary">
-        <div class="map-node-title">Frontal System Terms</div>
-        <div class="map-node-content">
-          <ul>
-            <li><strong>Frontogenesis:</strong> Specific process/zone of frontal formation.</li>
-            <li><strong>Warm Front:</strong> Active advancing warm air mass.</li>
-            <li><strong>Cold Front:</strong> Active advancing cold air mass.</li>
-            <li><strong>Occluded Front:</strong> Merged fronts lifted off the ground.</li>
-            <li><strong>Surface of Discontinuity:</strong> Boundary zone of density/temp differences.</li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="map-node accent">
-        <div class="map-node-title">Structure & Wind Terms</div>
-        <div class="map-node-content">
-          <ul>
-            <li><strong>Wave Apex:</strong> Central core (Note: unlike tropical storms, there is no calm, clear "eye").</li>
-            <li><strong>Westerlies:</strong> Planetary winds steering storms West to East.</li>
-            <li><strong>Polar Easterlies:</strong> Cold planetary winds feeding into the system.</li>
-            <li><strong>Coriolis / Ferrel's Law:</strong> Right deflection in NH, Left in SH.</li>
-          </ul>
-        </div>
-      </div>
+    <div class="mermaid">
+    flowchart TD
+        A[Terminology] --> B[Basic Weather Map Terms]
+        A --> C[Frontal System Terms]
+        A --> D[Structure & Wind Terms]
+
+        B --> B1["- Cyclone: Low-pressure area with circular/elliptical isobars<br>- Trough: Elongated low pressure system<br>- Isobars: Lines joining equal pressure points<br>- Pressure Gradient: Rate of change of pressure"]
+        
+        C --> C1["- Frontogenesis: Frontal formation process/zone<br>- Warm Front: Advancing warm air active<br>- Cold Front: Advancing cold air active<br>- Occluded Front: Merged fronts lifted off ground"]
+        
+        D --> D1["- Wave Apex: Central core of the storm<br>- Westerlies: Planetary winds steering West to East<br>- Polar Easterlies: Cold polar feeding winds<br>- Coriolis/Ferrel's: Deflection to the right in NH"]
+
+        style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+        style B fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
+        style C fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
+        style D fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
     </div>
     
   </div>
