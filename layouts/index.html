@@ -7,7 +7,7 @@
     <!-- Search Bar -->
     <div class="search-container">
       <i class="fa-solid fa-magnifying-glass search-icon"></i>
-      <input type="text" id="search-input" placeholder="Search topics (e.g. Isopleth, Scales, UTM)..." autocomplete="off">
+      <input type="text" id="search-input" placeholder="Search topics (e.g. Isopleth, Scales, UTM, Monsoon)..." autocomplete="off">
     </div>
   </div>
 </div>
@@ -20,44 +20,78 @@
     </div>
   </div>
 
-  <!-- Cards Grid -->
-  <div class="cards-grid" id="cards-grid">
-    {{ range .Site.RegularPages }}
-    <a href="{{ .RelPermalink }}" class="topic-card" data-title="{{ .Title | lower }}" data-content="{{ .Content | plainify | lower }}">
-      <div class="card-glow"></div>
-      <div class="card-content-wrapper">
-        <div class="card-icon">
-          {{ if or (in .Title "Map") (in .Title "Choropleth") (in .Title "Isopleth") }}
-          <i class="fa-solid fa-map-location-dot text-cyan"></i>
-          {{ else if in .Title "Chart" }}
-          <i class="fa-solid fa-chart-bar text-violet"></i>
-          {{ else if in .Title "Graph" }}
-          <i class="fa-solid fa-chart-line text-rose"></i>
-          {{ else if in .Title "Scale" }}
-          <i class="fa-solid fa-ruler-combined text-cyan"></i>
-          {{ else if in .Title "Log" }}
-          <i class="fa-solid fa-calculator text-violet"></i>
-          {{ else if in .Title "System" }}
-          <i class="fa-solid fa-network-wired text-rose"></i>
-          {{ else if in .Title "Globalization" }}
-          <i class="fa-solid fa-earth-americas text-globe"></i>
-          {{ else if or (in .Title "Short") (in .Title "Questions") }}
-          <i class="fa-solid fa-clipboard-question text-question"></i>
-          {{ else if or (or (or (in .Title "Front") (in .Title "Climatic")) (or (in .Title "Stability") (in .Title "Temperature"))) (or (or (in .Title "Insolation") (in .Title "Precipitation")) (or (or (in .Title "Monsoon") (in .Title "Condensation")) (or (in .Title "Cyclone") (in .Title "Air Mass")))) }}
-          <i class="fa-solid fa-cloud-sun text-weather"></i>
-          {{ else }}
-          <i class="fa-solid fa-file-lines text-cyan"></i>
-          {{ end }}
-        </div>
-        <h3 class="card-title">{{ .Title }}</h3>
-        <p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
-        <div class="card-meta">
-          <span><i class="fa-solid fa-book-open"></i> {{ .WordCount }} words</span>
-          <span><i class="fa-solid fa-clock"></i> {{ .ReadingTime }} min read</span>
-        </div>
+  <div id="topics-container">
+    <!-- Cartographic Section -->
+    <div class="category-group" id="group-cartographic">
+      <div class="category-title-bar">
+        <h3 class="category-title"><i class="fa-solid fa-map-location-dot text-cyan"></i> Cartographic Techniques</h3>
+        <span class="category-count">{{ len (where .Site.RegularPages "Section" "cartographic") }} topics</span>
       </div>
-    </a>
-    {{ end }}
+      <div class="cards-grid">
+        {{ range where .Site.RegularPages "Section" "cartographic" }}
+        <a href="{{ .RelPermalink }}" class="topic-card" data-title="{{ .Title | lower }}" data-content="{{ .Content | plainify | lower }}">
+          <div class="card-glow"></div>
+          <div class="card-content-wrapper">
+            <div class="card-icon">
+              {{ if or (in .Title "Map") (in .Title "Choropleth") (in .Title "Isopleth") }}
+              <i class="fa-solid fa-map-location-dot text-cyan"></i>
+              {{ else if in .Title "Chart" }}
+              <i class="fa-solid fa-chart-bar text-violet"></i>
+              {{ else if in .Title "Graph" }}
+              <i class="fa-solid fa-chart-line text-rose"></i>
+              {{ else if in .Title "Scale" }}
+              <i class="fa-solid fa-ruler-combined text-cyan"></i>
+              {{ else if in .Title "Log" }}
+              <i class="fa-solid fa-calculator text-violet"></i>
+              {{ else if in .Title "System" }}
+              <i class="fa-solid fa-network-wired text-rose"></i>
+              {{ else if in .Title "Globalization" }}
+              <i class="fa-solid fa-earth-americas text-globe"></i>
+              {{ else }}
+              <i class="fa-solid fa-file-lines text-cyan"></i>
+              {{ end }}
+            </div>
+            <h3 class="card-title">{{ .Title }}</h3>
+            <p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
+            <div class="card-meta">
+              <span><i class="fa-solid fa-book-open"></i> {{ .WordCount }} words</span>
+              <span><i class="fa-solid fa-clock"></i> {{ .ReadingTime }} min read</span>
+            </div>
+          </div>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- Climatology Section -->
+    <div class="category-group" id="group-climatology" style="margin-top: 30px;">
+      <div class="category-title-bar">
+        <h3 class="category-title"><i class="fa-solid fa-cloud-sun text-weather"></i> Climatology</h3>
+        <span class="category-count">{{ len (where .Site.RegularPages "Section" "climatology") }} topics</span>
+      </div>
+      <div class="cards-grid">
+        {{ range where .Site.RegularPages "Section" "climatology" }}
+        <a href="{{ .RelPermalink }}" class="topic-card" data-title="{{ .Title | lower }}" data-content="{{ .Content | plainify | lower }}">
+          <div class="card-glow"></div>
+          <div class="card-content-wrapper">
+            <div class="card-icon">
+              {{ if or (in .Title "Short") (in .Title "Questions") }}
+              <i class="fa-solid fa-clipboard-question text-question"></i>
+              {{ else }}
+              <i class="fa-solid fa-cloud-sun text-weather"></i>
+              {{ end }}
+            </div>
+            <h3 class="card-title">{{ .Title }}</h3>
+            <p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
+            <div class="card-meta">
+              <span><i class="fa-solid fa-book-open"></i> {{ .WordCount }} words</span>
+              <span><i class="fa-solid fa-clock"></i> {{ .ReadingTime }} min read</span>
+            </div>
+          </div>
+        </a>
+        {{ end }}
+      </div>
+    </div>
   </div>
   
   <div class="no-results" id="no-results" style="display: none;">
@@ -71,26 +105,39 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search-input');
-    const cards = document.querySelectorAll('.topic-card');
+    const categories = document.querySelectorAll('.category-group');
     const noResults = document.getElementById('no-results');
 
     searchInput.addEventListener('input', function() {
       const query = this.value.toLowerCase().trim();
-      let matchCount = 0;
+      let totalMatches = 0;
 
-      cards.forEach(card => {
-        const title = card.getAttribute('data-title');
-        const content = card.getAttribute('data-content');
+      categories.forEach(group => {
+        const cards = group.querySelectorAll('.topic-card');
+        let groupMatches = 0;
 
-        if (title.includes(query) || content.includes(query)) {
-          card.style.display = 'flex';
-          matchCount++;
+        cards.forEach(card => {
+          const title = card.getAttribute('data-title');
+          const content = card.getAttribute('data-content');
+
+          if (title.includes(query) || content.includes(query)) {
+            card.style.display = 'flex';
+            groupMatches++;
+            totalMatches++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Hide/show category group based on matches
+        if (groupMatches === 0) {
+          group.style.display = 'none';
         } else {
-          card.style.display = 'none';
+          group.style.display = 'block';
         }
       });
 
-      if (matchCount === 0) {
+      if (totalMatches === 0) {
         noResults.style.display = 'block';
       } else {
         noResults.style.display = 'none';
