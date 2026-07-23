@@ -1,6 +1,6 @@
 # TERRALUXwiki
 
-Interactive Study Portal for **Cartographic Techniques & Thematic Mapping (GEOADS07T)** built using Hugo.
+Interactive Study Portal for **TERRALUXwiki** built using Hugo.
 
 ## Features
 - **Year 2000 Retro UI**: A classic Windows 2000 / Web 1.0 inspired theme featuring Tahoma system fonts, 3D outset/inset bevel panels, and classic desktop grey aesthetics that are extremely easy on the eyes.
