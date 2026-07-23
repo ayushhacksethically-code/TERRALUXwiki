@@ -1,6 +1,6 @@
 ## Fishing and Forestry
 
-<a href="/economic-geography/fishing-and-forestry-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Fishing and Forestry Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### 1) The Fishing Economy
 

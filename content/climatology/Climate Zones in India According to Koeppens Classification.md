@@ -1,6 +1,6 @@
 ## Climate Zones in India According to Koeppen's Classification
 
-<a href="/climatology/climate-zones-in-india-according-to-koeppens-classification-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Climate Zones in India According to Koeppens Classification Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Introduction
 

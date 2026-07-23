@@ -1,6 +1,6 @@
 ## Short Questions with Answers (3rd Semester Honours - 2022-2023): Climatology (CC5)
 
-<a href="/climatology/short-questions-2022-2023-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Short Questions 2022-2023 Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### 1) Potential Evapotranspiration (PET)
 

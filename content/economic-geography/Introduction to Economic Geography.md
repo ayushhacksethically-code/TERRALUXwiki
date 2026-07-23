@@ -1,6 +1,6 @@
 ## Introduction to Economic Geography
 
-<a href="/economic-geography/introduction-to-economic-geography-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Introduction to Economic Geography Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Definition
 

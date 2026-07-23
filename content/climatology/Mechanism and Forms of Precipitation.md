@@ -1,6 +1,6 @@
 ## Mechanism and Forms of Precipitation
 
-<a href="/climatology/mechanism-and-forms-of-precipitation-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Mechanism and Forms of Precipitation Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Bergeron-Findeisen Process
 

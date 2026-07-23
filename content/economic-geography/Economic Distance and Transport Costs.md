@@ -1,6 +1,6 @@
 ## Economic Distance and Transport Costs
 
-<a href="/economic-geography/economic-distance-and-transport-costs-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Economic Distance and Transport Costs Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### 1) The Concept of Economic Distance
 

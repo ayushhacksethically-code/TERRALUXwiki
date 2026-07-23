@@ -1,6 +1,6 @@
 ## Mining Economy and Iron Ore
 
-<a href="/economic-geography/mining-economy-and-iron-ore-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Mining Economy and Iron Ore Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### 1) The Mining Economy
 

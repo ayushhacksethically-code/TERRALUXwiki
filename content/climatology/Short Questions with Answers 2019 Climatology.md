@@ -1,6 +1,6 @@
 ## Short Questions with Answers (3rd Semester Honours - 2019): Climatology (CC5)
 
-<a href="/climatology/short-questions-2019-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Short Questions 2019 Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### 1) Insolation
 

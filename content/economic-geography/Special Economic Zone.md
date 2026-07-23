@@ -1,6 +1,6 @@
 ## Special Economic Zone (SEZ)
 
-<a href="/economic-geography/special-economic-zone-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Special Economic Zone Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### 1) Definition & Concept
 

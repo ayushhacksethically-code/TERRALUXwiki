@@ -1,6 +1,6 @@
 ## Approaches to Study Economic Geography
 
-<a href="/economic-geography/approaches-to-study-economic-geography-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Approaches to Study Economic Geography Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Introduction
 

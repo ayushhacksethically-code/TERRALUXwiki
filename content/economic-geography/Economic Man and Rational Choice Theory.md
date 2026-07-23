@@ -1,6 +1,6 @@
 ## Economic Man and Rational Choice Theory
 
-<a href="/economic-geography/economic-man-and-rational-choice-theory-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Economic Man and Rational Choice Theory Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### 1) The Concept of Economic Man (Homo Economicus)
 

@@ -1,6 +1,6 @@
 ## Difference Between Stability and Instability
 
-<a href="/climatology/difference-between-stability-and-instability-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Difference Between Stability and Instability Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Introduction
 

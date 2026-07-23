@@ -1,6 +1,6 @@
 ## Agriculture: Systems and Practices
 
-<a href="/economic-geography/agriculture-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Agriculture Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### 1) Introduction to Agriculture
 

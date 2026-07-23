@@ -1,6 +1,6 @@
 ## Factors Affecting the Horizontal Distribution of Temperature
 
-<a href="/climatology/factors-affecting-the-horizontal-distribution-of-temperature-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Factors Affecting the Horizontal Distribution of Temperature Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Introduction
 

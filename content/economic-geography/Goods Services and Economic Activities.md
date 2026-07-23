@@ -1,6 +1,6 @@
 ## Goods, Services and Economic Activities
 
-<a href="/economic-geography/goods-services-and-economic-activities-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Goods Services and Economic Activities Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Introduction
 

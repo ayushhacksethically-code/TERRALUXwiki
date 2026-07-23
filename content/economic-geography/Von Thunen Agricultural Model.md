@@ -1,6 +1,6 @@
 ## Von Thünen's Agricultural Model
 
-<a href="/economic-geography/von-thunen-agricultural-model-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Von Thunen Agricultural Model Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### 1) Introduction & Background
 

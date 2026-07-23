@@ -1,6 +1,6 @@
 ## Weber's Least Cost Location Theory
 
-<a href="/economic-geography/weber-least-cost-location-theory-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Weber Least Cost Location Theory Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### 1) Introduction & Core Factors
 

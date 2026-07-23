@@ -1,6 +1,6 @@
 ## Technical Text: Air Mass Deep Dive
 
-<a href="/climatology/air-mass-deep-dive-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Air Mass Deep Dive Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Introduction & Definition
 

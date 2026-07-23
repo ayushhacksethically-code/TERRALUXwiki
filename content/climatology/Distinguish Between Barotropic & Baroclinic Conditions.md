@@ -1,6 +1,6 @@
 ## Distinguish Between Barotropic & Baroclinic Conditions
 
-<a href="/climatology/distinguish-between-barotropic-baroclinic-conditions-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Distinguish Between Barotropic & Baroclinic Conditions Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Introduction
 

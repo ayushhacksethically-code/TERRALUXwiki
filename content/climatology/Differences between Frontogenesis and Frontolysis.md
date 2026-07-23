@@ -1,6 +1,6 @@
 ## Differences between Frontogenesis and Frontolysis
 
-<a href="/climatology/differences-between-frontogenesis-and-frontolysis-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+<a href="{{< ref "Differences between Frontogenesis and Frontolysis Flowchart.md" >}}" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
 
 ### Introduction
 
