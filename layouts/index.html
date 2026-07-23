@@ -3,202 +3,125 @@
 {{ $cartographic := where $nonFlowcharts "Section" "cartographic" }}
 {{ $climatology := where $nonFlowcharts "Section" "climatology" }}
 {{ $economic := where $nonFlowcharts "Section" "economic-geography" }}
-<div class="hero-section">
-  <div class="container text-center">
-    <h1 class="hero-title">TERRALUX</h1>
-    <p class="hero-subtitle">Interactive Study Portal for Cartographic Techniques & Thematic Mapping</p>
-    
-    <!-- Search Bar -->
-    <div class="search-container">
-      <i class="fa-solid fa-magnifying-glass search-icon"></i>
-      <input type="text" id="search-input" placeholder="Search topics (e.g. Isopleth, Scales, UTM, Monsoon)..." autocomplete="off">
-    </div>
-  </div>
-</div>
 
-<div class="container content-section">
-  <div class="section-header">
-    <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Syllabus Topics ({{ len $nonFlowcharts }})</h2>
-    <div class="view-toggles">
-      <span class="badge"><i class="fa-solid fa-circle text-success"></i> All Content Loaded</span>
-    </div>
-  </div>
-
-  <div id="topics-container">
-    <!-- Cartographic Section -->
-    <div class="category-group" id="group-cartographic">
-      <div class="category-title-bar">
-        <h3 class="category-title"><i class="fa-solid fa-map-location-dot text-cyan"></i> Cartographic Techniques</h3>
-        <span class="category-count">{{ len $cartographic }} topics</span>
-      </div>
-      <div class="cards-grid">
-        {{ range $cartographic }}
-        <a href="{{ .RelPermalink }}" class="topic-card" data-title="{{ .Title | lower }}" data-content="{{ .Content | plainify | lower }}">
-          <div class="card-glow"></div>
-          <div class="card-content-wrapper">
-            <div class="card-icon">
-              {{ if or (in .Title "Map") (in .Title "Choropleth") (in .Title "Isopleth") }}
-              <i class="fa-solid fa-map-location-dot text-cyan"></i>
-              {{ else if in .Title "Chart" }}
-              <i class="fa-solid fa-chart-bar text-violet"></i>
-              {{ else if in .Title "Graph" }}
-              <i class="fa-solid fa-chart-line text-rose"></i>
-              {{ else if in .Title "Scale" }}
-              <i class="fa-solid fa-ruler-combined text-cyan"></i>
-              {{ else if in .Title "Log" }}
-              <i class="fa-solid fa-calculator text-violet"></i>
-              {{ else if in .Title "System" }}
-              <i class="fa-solid fa-network-wired text-rose"></i>
-              {{ else if in .Title "Globalization" }}
-              <i class="fa-solid fa-earth-americas text-globe"></i>
-              {{ else }}
-              <i class="fa-solid fa-file-lines text-cyan"></i>
-              {{ end }}
-            </div>
-            <h3 class="card-title">{{ .Title }}</h3>
-            <p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
-            <div class="card-meta">
-              <span><i class="fa-solid fa-book-open"></i> {{ .WordCount }} words</span>
-              <span><i class="fa-solid fa-clock"></i> {{ .ReadingTime }} min read</span>
-            </div>
-          </div>
-        </a>
-        {{ end }}
-      </div>
-    </div>
-
-    <!-- Climatology Section -->
-    <div class="category-group" id="group-climatology" style="margin-top: 30px;">
-      <div class="category-title-bar">
-        <h3 class="category-title"><i class="fa-solid fa-cloud-sun text-weather"></i> Climatology</h3>
-        <span class="category-count">{{ len $climatology }} topics</span>
-      </div>
-      <div class="cards-grid">
-        {{ range $climatology }}
-        <a href="{{ .RelPermalink }}" class="topic-card" data-title="{{ .Title | lower }}" data-content="{{ .Content | plainify | lower }}">
-          <div class="card-glow"></div>
-          <div class="card-content-wrapper">
-            <div class="card-icon">
-              {{ if or (in .Title "Short") (in .Title "Questions") }}
-              <i class="fa-solid fa-clipboard-question text-question"></i>
-              {{ else }}
-              <i class="fa-solid fa-cloud-sun text-weather"></i>
-              {{ end }}
-            </div>
-            <h3 class="card-title">{{ .Title }}</h3>
-            <p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
-            <div class="card-meta">
-              <span><i class="fa-solid fa-book-open"></i> {{ .WordCount }} words</span>
-              <span><i class="fa-solid fa-clock"></i> {{ .ReadingTime }} min read</span>
-            </div>
-          </div>
-        </a>
-        {{ end }}
-      </div>
-    </div>
-
-    <!-- Economic Geography Section -->
-    <div class="category-group" id="group-economic-geography" style="margin-top: 30px;">
-      <div class="category-title-bar">
-        <h3 class="category-title"><i class="fa-solid fa-coins text-warning"></i> Economic Geography</h3>
-        <span class="category-count">{{ len $economic }} topics</span>
-      </div>
-      <div class="cards-grid">
-        {{ range $economic }}
-        <a href="{{ .RelPermalink }}" class="topic-card" data-title="{{ .Title | lower }}" data-content="{{ .Content | plainify | lower }}">
-          <div class="card-glow"></div>
-          <div class="card-content-wrapper">
-            <div class="card-icon">
-              {{ if or (in .Title "Economic Geography") (in .Title "Introduction") (in .Title "Approaches") }}
-              <i class="fa-solid fa-earth-americas text-globe"></i>
-              {{ else if or (or (in .Title "Goods") (in .Title "Services")) (or (in .Title "Production") (in .Title "Productivity")) }}
-              <i class="fa-solid fa-wallet text-violet"></i>
-              {{ else if or (or (in .Title "Weber") (in .Title "Thunen")) (or (in .Title "Location") (in .Title "Isotim")) }}
-              <i class="fa-solid fa-industry text-rose"></i>
-              {{ else if or (in .Title "Mining") (in .Title "Iron Ore") }}
-              <i class="fa-solid fa-gem text-cyan"></i>
-              {{ else if in .Title "Special Economic Zone" }}
-              <i class="fa-solid fa-building-shield text-violet"></i>
-              {{ else if or (in .Title "Fishing") (in .Title "Forestry") }}
-              <i class="fa-solid fa-tree text-globe"></i>
-              {{ else if in .Title "Agriculture" }}
-              <i class="fa-solid fa-seedling text-globe"></i>
-              {{ else if in .Title "Globalization" }}
-              <i class="fa-solid fa-earth-americas text-globe"></i>
-              {{ else }}
-              <i class="fa-solid fa-file-invoice-dollar text-warning"></i>
-              {{ end }}
-            </div>
-            <h3 class="card-title">{{ .Title }}</h3>
-            <p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
-            <div class="card-meta">
-              <span><i class="fa-solid fa-book-open"></i> {{ .WordCount }} words</span>
-              <span><i class="fa-solid fa-clock"></i> {{ .ReadingTime }} min read</span>
-            </div>
-          </div>
-        </a>
-        {{ end }}
-      </div>
+<div class="retro-window bevel-out" style="max-width: 800px; margin: 30px auto; padding: 2px;">
+  <!-- Window Titlebar -->
+  <div class="title-bar">
+    <div class="title-bar-text">TERRALUX_INDEX.EXE</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
     </div>
   </div>
   
-  <div class="no-results" id="no-results" style="display: none;">
-    <i class="fa-solid fa-face-frown no-results-icon"></i>
-    <h3>No matching topics found</h3>
-    <p>Try searching for different keywords</p>
+  <!-- Window Client Area -->
+  <div class="window-body">
+    <div class="welcome-box bevel-in">
+      <h2 style="margin-top: 0; font-size: 20px; font-family: Tahoma, Arial, sans-serif;">Welcome to TERRALUX</h2>
+      <p style="font-size: 13px; margin-bottom: 5px;">Interactive Study Portal for Cartographic Techniques & Thematic Mapping (GEOADS07T)</p>
+    </div>
+
+    <!-- Retro Search Section (Using Google Search for unlimited scalability) -->
+    <div class="search-box-container bevel-in" style="margin: 15px 0; padding: 12px; background: #ece9d8;">
+      <form action="https://www.google.com/search" method="get" target="_blank" style="margin: 0;">
+        <input type="hidden" name="q" value="site:ayushhacksethically-code.github.io/TERRALUXwiki/">
+        <table border="0" cellpadding="2" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <font size="2" face="Tahoma" color="#000000"><b>Search Site Index (Scales to 100,000+ Pages via Google):</b></font>
+            </td>
+          </tr>
+          <tr>
+            <td style="display: flex; gap: 8px; margin-top: 5px;">
+              <input type="text" name="q" class="retro-input" style="flex: 1; padding: 4px; font-family: Tahoma, monospace; font-size: 12px;" placeholder="Search topics (e.g. Isopleth, Monsoon, Weber)..." required>
+              <input type="submit" value="Search" class="retro-btn" style="padding: 2px 15px;">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <!-- Category Tree (Collapsible Accordion) -->
+    <div class="tree-container bevel-in" style="background: #ffffff; padding: 15px; min-height: 250px;">
+      <div style="font-family: Tahoma, Arial, sans-serif; font-size: 12px; font-weight: bold; margin-bottom: 10px; border-bottom: 1px solid #808080; padding-bottom: 5px; color: #000080;">
+        📁 DIRECTORY TREE
+      </div>
+      
+      <div class="category-tree">
+        <!-- Cartographic Techniques -->
+        <div class="tree-node">
+          <div class="tree-header" onclick="toggleCategory('cartographic')" style="cursor: pointer; display: flex; align-items: center; gap: 6px; font-size: 13px; font-family: Tahoma, Arial, sans-serif; font-weight: bold; padding: 4px 0; user-select: none;">
+            <span class="toggle-icon" id="toggle-cartographic" style="font-family: monospace; color: #808080;">[+]</span>
+            <span class="folder-icon" id="folder-cartographic">📁</span>
+            <span class="node-title" style="color: #000000;">Cartographic Techniques</span>
+            <span class="node-count" style="font-weight: normal; color: #555555; font-size: 11px;">({{ len $cartographic }} topics)</span>
+          </div>
+          <ul class="topic-list" id="list-cartographic" style="display: none; list-style-type: none; padding-left: 28px; margin: 4px 0 10px 0;">
+            {{ range $cartographic }}
+            <li style="margin-bottom: 4px; font-size: 13px;">
+              📄 <a href="{{ .RelPermalink }}" class="retro-link">{{ .Title }}</a>
+              <span class="meta-info" style="font-size: 11px; color: #666666;">({{ .WordCount }} words, {{ .ReadingTime }} min read)</span>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+
+        <!-- Climatology -->
+        <div class="tree-node">
+          <div class="tree-header" onclick="toggleCategory('climatology')" style="cursor: pointer; display: flex; align-items: center; gap: 6px; font-size: 13px; font-family: Tahoma, Arial, sans-serif; font-weight: bold; padding: 4px 0; user-select: none;">
+            <span class="toggle-icon" id="toggle-climatology" style="font-family: monospace; color: #808080;">[+]</span>
+            <span class="folder-icon" id="folder-climatology">📁</span>
+            <span class="node-title" style="color: #000000;">Climatology</span>
+            <span class="node-count" style="font-weight: normal; color: #555555; font-size: 11px;">({{ len $climatology }} topics)</span>
+          </div>
+          <ul class="topic-list" id="list-climatology" style="display: none; list-style-type: none; padding-left: 28px; margin: 4px 0 10px 0;">
+            {{ range $climatology }}
+            <li style="margin-bottom: 4px; font-size: 13px;">
+              📄 <a href="{{ .RelPermalink }}" class="retro-link">{{ .Title }}</a>
+              <span class="meta-info" style="font-size: 11px; color: #666666;">({{ .WordCount }} words, {{ .ReadingTime }} min read)</span>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+
+        <!-- Economic Geography -->
+        <div class="tree-node">
+          <div class="tree-header" onclick="toggleCategory('economic-geography')" style="cursor: pointer; display: flex; align-items: center; gap: 6px; font-size: 13px; font-family: Tahoma, Arial, sans-serif; font-weight: bold; padding: 4px 0; user-select: none;">
+            <span class="toggle-icon" id="toggle-economic-geography" style="font-family: monospace; color: #808080;">[+]</span>
+            <span class="folder-icon" id="folder-economic-geography">📁</span>
+            <span class="node-title" style="color: #000000;">Economic Geography</span>
+            <span class="node-count" style="font-weight: normal; color: #555555; font-size: 11px;">({{ len $economic }} topics)</span>
+          </div>
+          <ul class="topic-list" id="list-economic-geography" style="display: none; list-style-type: none; padding-left: 28px; margin: 4px 0 10px 0;">
+            {{ range $economic }}
+            <li style="margin-bottom: 4px; font-size: 13px;">
+              📄 <a href="{{ .RelPermalink }}" class="retro-link">{{ .Title }}</a>
+              <span class="meta-info" style="font-size: 11px; color: #666666;">({{ .WordCount }} words, {{ .ReadingTime }} min read)</span>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- Client-side Search Javascript -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('search-input');
-    const categories = document.querySelectorAll('.category-group');
-    const noResults = document.getElementById('no-results');
-
-    searchInput.addEventListener('input', function() {
-      const query = this.value.toLowerCase().trim();
-      let totalMatches = 0;
-
-      categories.forEach(group => {
-        const cards = group.querySelectorAll('.topic-card');
-        let groupMatches = 0;
-
-        cards.forEach(card => {
-          const title = card.getAttribute('data-title');
-          const content = card.getAttribute('data-content');
-
-          if (title.includes(query) || content.includes(query)) {
-            card.style.display = 'flex';
-            groupMatches++;
-            totalMatches++;
-          } else {
-            card.style.display = 'none';
-          }
-        });
-
-        // Hide/show category group based on matches
-        if (groupMatches === 0) {
-          group.style.display = 'none';
-        } else {
-          group.style.display = 'block';
-        }
-      });
-
-      if (totalMatches === 0) {
-        noResults.style.display = 'block';
-      } else {
-        noResults.style.display = 'none';
-      }
-    });
-
-    // Clear search on Escape key
-    searchInput.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        this.value = '';
-        this.dispatchEvent(new Event('input'));
-      }
-    });
-  });
+<!-- Collapsible Menu Javascript -->
+<script type="text/javascript">
+  function toggleCategory(id) {
+    var list = document.getElementById('list-' + id);
+    var toggle = document.getElementById('toggle-' + id);
+    var folder = document.getElementById('folder-' + id);
+    if (list.style.display === 'none') {
+      list.style.display = 'block';
+      toggle.textContent = '[-]';
+      folder.textContent = '📂';
+    } else {
+      list.style.display = 'none';
+      toggle.textContent = '[+]';
+      folder.textContent = '📁';
+    }
+  }
 </script>
 {{ end }}
