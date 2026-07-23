@@ -70,3 +70,24 @@
 - A subsidence inversion can be fairly deep, sometimes spanning several thousand meters.
 - Its base is usually a few hundred meters above the ground because low-level turbulence prevents the warmer air from sinking lower.
 - *Visual Diagram Labels:* Under Air Above Inversion / Cooler Air Above Inversion, where air is heated as it is compressed into the side of the hill, resulting in Warm Air overriding Trapped Cooler Air.
+
+### Consequences of Temperature Inversion
+
+- **1) Formation of Fog & Low Visibility**:
+  - Temperature inversions trap cooler, moisture-laden air near the ground, causing condensation that forms fog, especially on calm, clear nights.
+  - Fog, haze, or smog resulting from inversions can drastically lower visibility, impacting transportation and everyday activities.
+- **2) Atmospheric Stability & Suppressed Convection**:
+  - Inversions act like a lid over the lower atmosphere, preventing warm air from rising.
+  - This restricts convection and limits cloud formation, leaving clear skies above the inversion.
+- **3) Surface Air Pollution & Smog**:
+  - Dust, smoke, and industrial emissions often get trapped near the surface during inversions, deteriorating air quality and creating smog in urban and industrial zones.
+- **4) Temperature Extremes & Diurnal Variation**:
+  - The cool air under an inversion can cause chilly nights, while restricted mixing with upper layers reduces daytime temperature moderation.
+- **5) Frost Damage to Agriculture**:
+  - Radiation inversions can quickly lower ground temperatures, leading to frost that can harm crops and vegetation.
+- **6) Stagnant Weather & Suppressed Precipitation**:
+  - Inversions create stable atmospheric layers, slowing wind speeds and causing prolonged stagnant weather patterns in affected areas.
+  - Vertical air movement is limited under inversions, suppressing rainfall and sometimes extending dry spells, contributing to drought conditions.
+- **7) Severe Storm Potential**:
+  - Strong inversions can prevent thunderstorms by blocking warm, moist air from rising.
+  - If the inversion breaks, accumulated energy can trigger severe storms suddenly.

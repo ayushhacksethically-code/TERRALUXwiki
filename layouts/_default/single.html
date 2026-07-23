@@ -31,8 +31,19 @@
       </ul>
 
       <h3 class="sidebar-title" style="display: flex; align-items: center; gap: 8px; border-top: 1px solid var(--border-color); padding-top: 15px; margin-top: 15px;"><i class="fa-solid fa-cloud-sun text-weather"></i> Climatology</h3>
-      <ul class="sidebar-list">
+      <ul class="sidebar-list" style="margin-bottom: 25px;">
         {{ range where $nonFlowcharts "Section" "climatology" }}
+        <li class="sidebar-item{{ if eq .Permalink $.Permalink }} active{{ end }}">
+          <a href="{{ .RelPermalink }}" class="sidebar-link">
+            <span class="sidebar-item-title">{{ .Title }}</span>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+
+      <h3 class="sidebar-title" style="display: flex; align-items: center; gap: 8px; border-top: 1px solid var(--border-color); padding-top: 15px; margin-top: 15px;"><i class="fa-solid fa-coins text-warning"></i> Economic Geography</h3>
+      <ul class="sidebar-list">
+        {{ range where $nonFlowcharts "Section" "economic-geography" }}
         <li class="sidebar-item{{ if eq .Permalink $.Permalink }} active{{ end }}">
           <a href="{{ .RelPermalink }}" class="sidebar-link">
             <span class="sidebar-item-title">{{ .Title }}</span>

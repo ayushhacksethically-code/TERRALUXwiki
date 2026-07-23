@@ -260,6 +260,7 @@ a:hover {
 .text-globe { color: #16a34a; }
 .text-weather { color: #ea580c; }
 .text-question { color: #db2777; }
+.text-warning { color: #d97706; }
 
 .card-title {
   font-family: Georgia, serif;

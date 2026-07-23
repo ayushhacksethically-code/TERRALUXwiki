@@ -1,5 +1,7 @@
 ## Globalization
 
+<a href="/economic-geography/globalization-flowchart/" class="btn-visual-notes"><i class="fa-solid fa-circle-nodes"></i> View Visual Flowchart Notes</a>
+
 ### Introduction & Definition
 
 - The official definition of "globalization" is the process by which businesses or other organizations develop international influence or start operating on an international scale.

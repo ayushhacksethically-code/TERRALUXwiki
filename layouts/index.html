@@ -2,6 +2,7 @@
 {{ $nonFlowcharts := where .Site.RegularPages "Params.flowchart" "!=" true }}
 {{ $cartographic := where $nonFlowcharts "Section" "cartographic" }}
 {{ $climatology := where $nonFlowcharts "Section" "climatology" }}
+{{ $economic := where $nonFlowcharts "Section" "economic-geography" }}
 <div class="hero-section">
   <div class="container text-center">
     <h1 class="hero-title">TERRALUX</h1>
@@ -82,6 +83,50 @@
               <i class="fa-solid fa-clipboard-question text-question"></i>
               {{ else }}
               <i class="fa-solid fa-cloud-sun text-weather"></i>
+              {{ end }}
+            </div>
+            <h3 class="card-title">{{ .Title }}</h3>
+            <p class="card-excerpt">{{ .Summary | truncate 120 }}</p>
+            <div class="card-meta">
+              <span><i class="fa-solid fa-book-open"></i> {{ .WordCount }} words</span>
+              <span><i class="fa-solid fa-clock"></i> {{ .ReadingTime }} min read</span>
+            </div>
+          </div>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- Economic Geography Section -->
+    <div class="category-group" id="group-economic-geography" style="margin-top: 30px;">
+      <div class="category-title-bar">
+        <h3 class="category-title"><i class="fa-solid fa-coins text-warning"></i> Economic Geography</h3>
+        <span class="category-count">{{ len $economic }} topics</span>
+      </div>
+      <div class="cards-grid">
+        {{ range $economic }}
+        <a href="{{ .RelPermalink }}" class="topic-card" data-title="{{ .Title | lower }}" data-content="{{ .Content | plainify | lower }}">
+          <div class="card-glow"></div>
+          <div class="card-content-wrapper">
+            <div class="card-icon">
+              {{ if or (in .Title "Economic Geography") (in .Title "Introduction") (in .Title "Approaches") }}
+              <i class="fa-solid fa-earth-americas text-globe"></i>
+              {{ else if or (or (in .Title "Goods") (in .Title "Services")) (or (in .Title "Production") (in .Title "Productivity")) }}
+              <i class="fa-solid fa-wallet text-violet"></i>
+              {{ else if or (or (in .Title "Weber") (in .Title "Thunen")) (or (in .Title "Location") (in .Title "Isotim")) }}
+              <i class="fa-solid fa-industry text-rose"></i>
+              {{ else if or (in .Title "Mining") (in .Title "Iron Ore") }}
+              <i class="fa-solid fa-gem text-cyan"></i>
+              {{ else if in .Title "Special Economic Zone" }}
+              <i class="fa-solid fa-building-shield text-violet"></i>
+              {{ else if or (in .Title "Fishing") (in .Title "Forestry") }}
+              <i class="fa-solid fa-tree text-globe"></i>
+              {{ else if in .Title "Agriculture" }}
+              <i class="fa-solid fa-seedling text-globe"></i>
+              {{ else if in .Title "Globalization" }}
+              <i class="fa-solid fa-earth-americas text-globe"></i>
+              {{ else }}
+              <i class="fa-solid fa-file-invoice-dollar text-warning"></i>
               {{ end }}
             </div>
             <h3 class="card-title">{{ .Title }}</h3>

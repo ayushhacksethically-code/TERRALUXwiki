@@ -48,4 +48,28 @@ flowchart TD
     style S1 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
     style S2 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
     style S3 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+
+---
+
+## 3. Consequences of Temperature Inversion
+
+```mermaid
+flowchart TD
+    Title["CONSEQUENCES OF TEMPERATURE INVERSION"]
+    Title --> C1["1. Visibility & Fog"]
+    Title --> C2["2. Air Pollution & Smog"]
+    Title --> C3["3. Weather & Climate Effects"]
+    Title --> C4["4. Agricultural Impact"]
+
+    C1 --> C1_Bullets["• Traps cooler, moisture-laden air near ground leading to condensation & fog.<br>• Drastically reduces visibility, impacting transport and daily operations."]
+    C2 --> C2_Bullets["• Acts as atmospheric lid preventing upward mixing of air.<br>• Traps dust, smoke, and industrial emissions near the surface, forming smog."]
+    C3 --> C3_Bullets["• Suppresses convection & cloud formation (clear skies above inversion).<br>• Slows wind speeds (stable layers), creating stagnant weather patterns.<br>• Suppresses vertical air movement, limiting rainfall & extending droughts.<br>• Suppresses thunderstorms; if inversion breaks, accumulated energy sparks severe storms."]
+    C4 --> C4_Bullets["• Cool air near ground causes colder nights.<br>• Radiational cooling lowers surface temperatures, creating frost that damages crops."]
+
+    style Title fill:#f1f5f9,stroke:#334155,stroke-width:2px
+    style C1 fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
+    style C2 fill:#fef2f2,stroke:#ef4444,stroke-width:1px
+    style C3 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+    style C4 fill:#fffbeb,stroke:#d97706,stroke-width:1px
+```
 ```
