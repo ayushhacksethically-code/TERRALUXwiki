@@ -39,9 +39,19 @@
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
+      // Convert Markdown code fences (pre code.language-mermaid) to div.mermaid
+      const mermaidBlocks = document.querySelectorAll('pre code.language-mermaid');
+      mermaidBlocks.forEach(function(codeEl) {
+        const preEl = codeEl.parentElement;
+        const divEl = document.createElement('div');
+        divEl.className = 'mermaid';
+        divEl.textContent = codeEl.textContent;
+        preEl.replaceWith(divEl);
+      });
+
       mermaid.initialize({
         startOnLoad: true,
-        theme: 'default',
+        theme: 'dark',
         securityLevel: 'loose',
         flowchart: { useMaxWidth: true, htmlLabels: true }
       });
