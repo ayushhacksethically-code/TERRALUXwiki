@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ or .Title .File.BaseFileName }} | {{ .Site.Title }}{{ end }}</title>
   
   <!-- SEO Meta Tags -->
   <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .Summary }}{{ .Summary }}{{ else }}{{ .Site.Title }} - Cartographic Techniques and Thematic Mapping notes.{{ end }}">
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
+  
+  <!-- Pagefind Search -->
+  <link href="{{ "pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet">
+  <script src="{{ "pagefind/pagefind-ui.js" | relURL }}"></script>
   
   <!-- FontAwesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

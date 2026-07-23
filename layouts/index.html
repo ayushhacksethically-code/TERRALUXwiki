@@ -22,24 +22,12 @@
       <p style="font-size: 13px; margin-bottom: 5px;">Interactive Study Portal for Cartographic Techniques & Thematic Mapping (GEOADS07T)</p>
     </div>
 
-    <!-- Retro Search Section (Using Google Search for unlimited scalability) -->
+    <!-- Pagefind Search Section -->
     <div class="search-box-container bevel-in" style="margin: 15px 0; padding: 12px; background: #ece9d8;">
-      <form action="https://www.google.com/search" method="get" target="_blank" style="margin: 0;">
-        <input type="hidden" name="q" value="site:ayushhacksethically-code.github.io/TERRALUXwiki/">
-        <table border="0" cellpadding="2" cellspacing="0" width="100%">
-          <tr>
-            <td>
-              <font size="2" face="Tahoma" color="#000000"><b>Search Site Index (Scales to 100,000+ Pages via Google):</b></font>
-            </td>
-          </tr>
-          <tr>
-            <td style="display: flex; gap: 8px; margin-top: 5px;">
-              <input type="text" name="q" class="retro-input" style="flex: 1; padding: 4px; font-family: Tahoma, monospace; font-size: 12px;" placeholder="Search topics (e.g. Isopleth, Monsoon, Weber)..." required>
-              <input type="submit" value="Search" class="retro-btn" style="padding: 2px 15px;">
-            </td>
-          </tr>
-        </table>
-      </form>
+      <div style="font-family: Tahoma, Arial, sans-serif; font-size: 12px; font-weight: bold; margin-bottom: 8px; color: #000000;">
+        🔍 SEARCH INDEX (Pagefind):
+      </div>
+      <div id="search" class="bevel-in" style="background: #ffffff; padding: 5px;"></div>
     </div>
 
     <!-- Category Tree (Collapsible Accordion) -->
@@ -60,7 +48,7 @@
           <ul class="topic-list" id="list-cartographic" style="display: none; list-style-type: none; padding-left: 28px; margin: 4px 0 10px 0;">
             {{ range $cartographic }}
             <li style="margin-bottom: 4px; font-size: 13px;">
-              📄 <a href="{{ .RelPermalink }}" class="retro-link">{{ .Title }}</a>
+              📄 <a href="{{ .RelPermalink }}" class="retro-link">{{ or .Title .File.BaseFileName }}</a>
               <span class="meta-info" style="font-size: 11px; color: #666666;">({{ .WordCount }} words, {{ .ReadingTime }} min read)</span>
             </li>
             {{ end }}
@@ -78,7 +66,7 @@
           <ul class="topic-list" id="list-climatology" style="display: none; list-style-type: none; padding-left: 28px; margin: 4px 0 10px 0;">
             {{ range $climatology }}
             <li style="margin-bottom: 4px; font-size: 13px;">
-              📄 <a href="{{ .RelPermalink }}" class="retro-link">{{ .Title }}</a>
+              📄 <a href="{{ .RelPermalink }}" class="retro-link">{{ or .Title .File.BaseFileName }}</a>
               <span class="meta-info" style="font-size: 11px; color: #666666;">({{ .WordCount }} words, {{ .ReadingTime }} min read)</span>
             </li>
             {{ end }}
@@ -96,7 +84,7 @@
           <ul class="topic-list" id="list-economic-geography" style="display: none; list-style-type: none; padding-left: 28px; margin: 4px 0 10px 0;">
             {{ range $economic }}
             <li style="margin-bottom: 4px; font-size: 13px;">
-              📄 <a href="{{ .RelPermalink }}" class="retro-link">{{ .Title }}</a>
+              📄 <a href="{{ .RelPermalink }}" class="retro-link">{{ or .Title .File.BaseFileName }}</a>
               <span class="meta-info" style="font-size: 11px; color: #666666;">({{ .WordCount }} words, {{ .ReadingTime }} min read)</span>
             </li>
             {{ end }}
@@ -107,7 +95,7 @@
   </div>
 </div>
 
-<!-- Collapsible Menu Javascript -->
+<!-- Pagefind & Collapsible Menu Script -->
 <script type="text/javascript">
   function toggleCategory(id) {
     var list = document.getElementById('list-' + id);
@@ -123,5 +111,16 @@
       folder.textContent = '📁';
     }
   }
+
+  window.addEventListener('DOMContentLoaded', (event) => {
+    if (document.getElementById('search')) {
+      new PagefindUI({
+        element: "#search",
+        showImages: false,
+        showSubResults: true,
+        resetFilters: true
+      });
+    }
+  });
 </script>
 {{ end }}

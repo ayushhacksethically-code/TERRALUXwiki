@@ -472,3 +472,54 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* Pagefind Windows 2000 Theme Customizations */
+#search {
+  --pagefind-ui-font: Tahoma, Geneva, Verdana, sans-serif;
+  --pagefind-ui-background: #ffffff;
+  --pagefind-ui-text: #000000;
+  --pagefind-ui-border: #808080;
+  --pagefind-ui-primary: #000080;
+  --pagefind-ui-border-radius: 0px;
+}
+
+#search .pagefind-ui__search-input {
+  background: #ffffff;
+  border-top: 2px solid #808080 !important;
+  border-left: 2px solid #808080 !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  border-radius: 0px !important;
+  outline: none;
+  box-shadow: inset 1px 1px 0px 0px #000000;
+}
+
+#search .pagefind-ui__search-clear {
+  background: #d4d0c8;
+  border-top: 1px solid #ffffff !important;
+  border-left: 1px solid #ffffff !important;
+  border-right: 1px solid #808080 !important;
+  border-bottom: 1px solid #808080 !important;
+  border-radius: 0px !important;
+  color: #000000;
+  font-family: Tahoma, sans-serif;
+  font-size: 11px;
+}
+
+#search .pagefind-ui__result {
+  border-bottom: 1px dashed #808080 !important;
+  padding: 10px 0 !important;
+}
+
+#search .pagefind-ui__result-link {
+  color: #0000ee !important;
+  text-decoration: underline !important;
+  font-weight: bold;
+}
+
+#search .pagefind-ui__result-excerpt {
+  font-size: 12px;
+  color: #333333;
+}

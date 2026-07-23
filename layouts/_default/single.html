@@ -6,7 +6,7 @@
     <article class="article-card">
       <div class="article-header">
         <a href="{{ site.Home.RelPermalink }}" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
-        <h1 class="article-title">{{ .Title }}</h1>
+        <h1 class="article-title">{{ or .Title .File.BaseFileName }}</h1>
         <div class="article-meta">
           <span><i class="fa-solid fa-book-open"></i> {{ .WordCount }} words</span>
           <span><i class="fa-solid fa-clock"></i> {{ .ReadingTime }} min read</span>
@@ -24,7 +24,7 @@
         {{ range where $nonFlowcharts "Section" "cartographic" }}
         <li class="sidebar-item{{ if eq .Permalink $.Permalink }} active{{ end }}">
           <a href="{{ .RelPermalink }}" class="sidebar-link">
-            <span class="sidebar-item-title">{{ .Title }}</span>
+            <span class="sidebar-item-title">{{ or .Title .File.BaseFileName }}</span>
           </a>
         </li>
         {{ end }}
@@ -35,7 +35,7 @@
         {{ range where $nonFlowcharts "Section" "climatology" }}
         <li class="sidebar-item{{ if eq .Permalink $.Permalink }} active{{ end }}">
           <a href="{{ .RelPermalink }}" class="sidebar-link">
-            <span class="sidebar-item-title">{{ .Title }}</span>
+            <span class="sidebar-item-title">{{ or .Title .File.BaseFileName }}</span>
           </a>
         </li>
         {{ end }}
@@ -46,7 +46,7 @@
         {{ range where $nonFlowcharts "Section" "economic-geography" }}
         <li class="sidebar-item{{ if eq .Permalink $.Permalink }} active{{ end }}">
           <a href="{{ .RelPermalink }}" class="sidebar-link">
-            <span class="sidebar-item-title">{{ .Title }}</span>
+            <span class="sidebar-item-title">{{ or .Title .File.BaseFileName }}</span>
           </a>
         </li>
         {{ end }}
